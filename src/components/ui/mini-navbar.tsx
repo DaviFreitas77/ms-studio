@@ -66,8 +66,8 @@ export function Navbar() {
 
   const navLinksData = [
     { label: "Início", href: "#1" },
-    { label: "Serviços", href: "#2" },
     { label: "Portfólio", href: "#3" },
+    { label: "Serviços", href: "#2" },
     { label: "Contato", href: "#4" },
   ];
 

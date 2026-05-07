@@ -67,14 +67,14 @@ export function Hero() {
               <Image
                 src="/images/nails-art.jpg"
                 alt="Nail Art"
-                width={240}
+                width={260}
                 height={40}
                 className="rounded-lg"
               />
               <Image
                 src="/images/nails-art.jpg"
                 alt="Nail Art"
-                width={240}
+                width={260}
                 height={40}
                 className="rounded-lg mt-4"
               />
@@ -84,7 +84,7 @@ export function Hero() {
               <Image
                 src="/images/nails-art.jpg"
                 alt="Nail Art"
-                width={280}
+                width={300}
                 height={40}
                 className="rounded-lg"
               />
@@ -92,7 +92,7 @@ export function Hero() {
               <Image
                 src="/images/nails-art.jpg"
                 alt="Nail Art"
-                width={240}
+                width={260}
                 height={40}
                 className="rounded-lg mt-4"
               />
