@@ -48,14 +48,14 @@ export function Hero() {
               animate={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -50 }}
               transition={{
-                duration: 0.8,
-                delay: 0.8,
+               duration: 0.8,
+                delay: 0.5,
                 ease: "easeIn",
               }}
               className="flex items-center gap-4 mb-4"
             >
               <h1 className="inline-block max-w-xl text-4xl leading-tight sm:text-5xl lg:text-6xl lg:leading-19 font-light ">
-                Cuidando de  <br /> <span className="font-medium">cada detalhe das <br /> suas unhas</span>
+                Cuidando de   <span className="font-medium">cada detalhe das suas unhas</span>
               </h1>
             </motion.div>
 
@@ -63,8 +63,8 @@ export function Hero() {
               animate={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -50 }}
               transition={{
-                duration: 0.8,
-                delay: 0.8,
+              duration: 0.8,
+                delay: 0.5,
                 ease: "easeIn",
               }}
               className="flex items-center gap-4 mb-4"
@@ -78,7 +78,7 @@ export function Hero() {
             initial={{ opacity: 0, x: -50 }}
             transition={{
               duration: 0.8,
-              delay: 0.8,
+                delay: 0.5,
               ease: "easeIn",
             }}
           >
@@ -93,16 +93,16 @@ export function Hero() {
             initial={{ opacity: 0, x: -50 }}
             transition={{
               duration: 0.8,
-              delay: 0.8,
+                delay: 0.5,
               ease: "easeIn",
             }}
-            className="inline-flex w-fit"
+            className="w-full sm:w-fit"
           >
-            <div className="group relative mt-5 inline-flex w-fit">
+            <div className="group relative mt-5 inline-flex w-full sm:w-fit">
               <div
                 className="absolute inset-0 -m-2 hidden rounded-full bg-gray-100 opacity-40 filter blur-lg pointer-events-none transition-all duration-300 ease-out group-hover:opacity-60 group-hover:blur-xl group-hover:-m-3 sm:block"
               />
-              <button className="relative z-10 w-fit whitespace-nowrap rounded-lg bg-linear-to-br from-gray-100 to-gray-300  px-8 py-3 text-base font-light  tracking-[0.15em] text-black transition-all duration-200 hover:from-gray-200 hover:to-gray-400 sm:px-12 cursor-pointer mt-3">
+              <button className="relative z-10 w-full whitespace-nowrap rounded-lg bg-linear-to-br from-gray-100 to-gray-300 px-8 py-3 text-base font-light tracking-[0.15em] text-black transition-all duration-200 hover:from-gray-200 hover:to-gray-400 sm:w-fit sm:px-12 cursor-pointer mt-3">
                 Agende seu horário
               </button>
             </div>
@@ -113,8 +113,8 @@ export function Hero() {
             animate={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -50 }}
             transition={{
-              duration: 0.8,
-              delay: 0.9,
+               duration: 0.8,
+                delay: 0.5,
               ease: "easeIn",
             }}
           >
@@ -142,8 +142,8 @@ export function Hero() {
             animate={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: 50 }}
             transition={{
-              duration: 0.8,
-              delay: 0.9,
+                duration: 0.8,
+                delay: 0.5,
               ease: "easeIn",
             }}
           >

@@ -37,8 +37,8 @@ export function Portfolio() {
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{
-            duration: 0.7,
-            delay: 0.6,
+           duration: 0.7,
+            delay: 0.5,
             ease: "easeIn",
           }}
           viewport={{ once: true, amount: 0.35 }}
