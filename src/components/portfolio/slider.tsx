@@ -15,17 +15,17 @@ export function Slider() {
           type="button"
           aria-label="Slide anterior"
           onClick={() => swiperRef.current?.slidePrev()}
-          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-colors hover:bg-white/10"
+          className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-colors hover:bg-white/10 sm:h-11 sm:w-11"
         >
-          <ChevronLeft className="h-5 w-5" />
+          <ChevronLeft className="h-4 w-4 sm:h-5 sm:w-5" />
         </button>
         <button
           type="button"
           aria-label="Próximo slide"
           onClick={() => swiperRef.current?.slideNext()}
-          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-colors hover:bg-white/10"
+          className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-colors hover:bg-white/10 sm:h-11 sm:w-11"
         >
-          <ChevronRight className="h-5 w-5" />
+          <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5" />
         </button>
       </div>
       <div className="mt-6">
@@ -36,17 +36,19 @@ export function Slider() {
           }}
           pagination={{ clickable: true }}
           autoplay={{ delay: 3500, disableOnInteraction: false }}
-          spaceBetween={20}
+          spaceBetween={12}
+          slidesPerView={1}
           breakpoints={{
-            640: { slidesPerView: 1.2 },
-            900: { slidesPerView: 1.8 },
-            1200: { slidesPerView: 3.5 },
+            640: { slidesPerView: 1.05, spaceBetween: 14 },
+            900: { slidesPerView: 2.5, spaceBetween: 18 },
+            1200: { slidesPerView: 3.4, spaceBetween: 20 },
+            1440: { slidesPerView:3.5, spaceBetween: 24 },
           }}
           className="portfolio-swiper pb-12"
         >
           {portfolioSlides.map((slide, index) => (
             <SwiperSlide key={slide.title}>
-              <article className="group h-full w-full overflow-hidden rounded-[28px] border border-white/10 bg-white/5 backdrop-blur-sm shadow-[0_18px_80px_rgba(0,0,0,0.35)]">
+              <article className="group h-full w-full overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-[0_18px_80px_rgba(0,0,0,0.35)]">
                 <div className="relative aspect-4/5 w-full overflow-hidden">
                   <Image
                     src="/images/nails-work.jpg"
@@ -60,10 +62,10 @@ export function Slider() {
                     <div className="inline-flex rounded-full border border-[#C9A227]/30 bg-[#C9A227]/15 px-3 py-1 text-xs uppercase tracking-[0.25em] text-[#E6C56A]">
                       0{index + 1}
                     </div>
-                    <h3 className="mt-3 text-2xl font-semibold">
+                    <h3 className="mt-3 text-xl font-semibold sm:text-2xl">
                       {slide.title}
                     </h3>
-                    <p className="mt-2 max-w-md text-sm text-gray-300">
+                    <p className="mt-2 max-w-md text-xs text-gray-300 sm:text-sm">
                       {slide.text}
                     </p>
                   </div>

@@ -10,24 +10,23 @@ import "swiper/css/pagination";
 export function Portfolio() {
 
   return (
-    <section className="relative z-10 px-10 pb-24 pt-20 text-white">
+    <section className="relative z-10 overflow-hidden bg-linear-to-b from-[#0c0709] via-[#0a0607] to-black px-5 py-10 text-white sm:px-8 sm:py-14 lg:px-10 lg:py-20">
       <div className="mx-auto max-w-7xl">
-        <div className="flex items-center gap-4 mb-4">
-          <spanc
-            aria-hidden="true"
-            className="hidden h-px w-12 bg-linear-to-r from-transparent via-white/35 to-transparent md:flex"
-          />
-          <p className="text-[#C9A227]">Designs delicados e acabamento limpo</p>
+        <div className="mb-4 flex items-center gap-3 sm:gap-4">
+          <span aria-hidden="true" className="hidden h-px w-12 bg-linear-to-r from-transparent via-white/35 to-transparent md:block" />
+          <p className="text-sm text-[#C9A227]">Designs delicados e acabamento limpo</p>
         </div>
 
-        <div className="flex flex-wrap items-end justify-between gap-6">
-          <div className="max-w-2xl">
-            <h2 className="text-4xl font-semibold leading-tight ">
+        <div className="flex flex-col gap-6">
+          <div className="max-w-2xl w-full">
+            <h2 className="text-3xl font-semibold leading-tight sm:text-4xl text-center lg:text-center">
               Veja alguns trabalhos recentes.
             </h2>
           </div>
 
-          <Slider/>
+          <div className="w-full">
+            <Slider />
+          </div>
         </div>
 
       </div>
