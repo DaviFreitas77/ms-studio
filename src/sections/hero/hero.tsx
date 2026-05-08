@@ -20,7 +20,7 @@ export function Hero() {
         }}
       />
 
-      <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center justify-center gap-10 px-5 pb-16 pt-28 text-white sm:px-8 md:pt-36 lg:flex-row lg:gap-16 lg:px-10 lg:pb-24 lg:pt-44">
+      <div className="relative z-10 mx-auto flex w-full max-w-[1400px] flex-col items-center justify-center gap-10 px-5 pb-16 pt-28 text-white sm:px-8 md:pt-36 lg:flex-row lg:gap-26 lg:px-10 lg:pb-24 lg:pt-44">
         <section className="w-full lg:w-1/2">
           <div>
             <div className="flex items-center gap-4 mb-4">
@@ -34,15 +34,14 @@ export function Hero() {
             </div>
 
             <h1 className="inline-block max-w-xl text-4xl leading-tight sm:text-5xl lg:text-7xl lg:leading-19">
-              The New Standard in Nail Mastery
+             Cuidando de cada detalhe das suas unhas
             </h1>
 
             <div className="w-40 h-0.5 bg-[#C9A227] mt-2 rounded-full"></div>
           </div>
 
           <p className="mt-4 max-w-2xl text-base text-gray-300 sm:text-lg">
-            lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Cada atendimento é feito com cuidado, atenção aos detalhes e muito carinho para valorizar ainda mais sua beleza.
           </p>
           <button className="mt-5 w-full cursor-pointer rounded bg-[#C9A227] px-8 py-3 text-base font-bold text-black hover:bg-[#c99e2d] sm:w-auto sm:px-12">
             Agende seu horário

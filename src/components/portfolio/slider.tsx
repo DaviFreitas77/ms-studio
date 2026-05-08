@@ -37,9 +37,9 @@ export function Slider() {
           pagination={{ clickable: true }}
           autoplay={{ delay: 3500, disableOnInteraction: false }}
           spaceBetween={12}
-          slidesPerView={1}
+          slidesPerView={2.2}
           breakpoints={{
-            640: { slidesPerView: 1.05, spaceBetween: 14 },
+            640: { slidesPerView: 2.2, spaceBetween: 14 },
             900: { slidesPerView: 2.5, spaceBetween: 18 },
             1200: { slidesPerView: 3.4, spaceBetween: 20 },
             1440: { slidesPerView:3.5, spaceBetween: 24 },
@@ -62,10 +62,10 @@ export function Slider() {
                     <div className="inline-flex rounded-full border border-[#C9A227]/30 bg-[#C9A227]/15 px-3 py-1 text-xs uppercase tracking-[0.25em] text-[#E6C56A]">
                       0{index + 1}
                     </div>
-                    <h3 className="mt-3 text-xl font-semibold sm:text-2xl">
+                    <h3 className="hidden sm:block mt-3 text-xl font-semibold sm:text-2xl">
                       {slide.title}
                     </h3>
-                    <p className="mt-2 max-w-md text-xs text-gray-300 sm:text-sm">
+                    <p className="hidden sm:block mt-2 max-w-md text-xs text-gray-300 sm:text-sm">
                       {slide.text}
                     </p>
                   </div>
