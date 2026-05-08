@@ -37,7 +37,7 @@ export function Slider() {
           pagination={{ clickable: true }}
           autoplay={{ delay: 3500, disableOnInteraction: false }}
           spaceBetween={12}
-          slidesPerView={2.2}
+          slidesPerView={1.7}
           breakpoints={{
             640: { slidesPerView: 2.2, spaceBetween: 14 },
             900: { slidesPerView: 2.5, spaceBetween: 18 },

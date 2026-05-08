@@ -12,14 +12,14 @@ export function Portfolio() {
   return (
     <section className="relative z-10 overflow-hidden bg-linear-to-b from-[#0c0709] via-[#0a0607] to-black px-5 py-10 text-white sm:px-8 sm:py-14 lg:px-10 lg:py-20">
       <div className="mx-auto max-w-7xl">
-        <div className="mb-4 flex items-center gap-3 sm:gap-4">
-          <span aria-hidden="true" className=" h-px w-12 bg-linear-to-r from-transparent via-white/35 to-transparent" />
-          <p className="text-sm text-[#C9A227]">Portfólio</p>
+        <div className="mb-4 flex items-center gap-3 sm:gap-4 w-full text-center justify-center lg:justify-start">
+          <span aria-hidden="true" className=" h-px w-12 bg-linear-to-r from-transparent via-white/35 to-transparent hidden lg:block" />
+          <p className="text-sm text-[#C9A227] text-center">Portfólio</p>
         </div>
 
         <div className="flex flex-col gap-6">
           <div className="max-w-2xl w-full">
-            <h2 className="text-3xl font-semibold leading-tight sm:text-4xl ">
+            <h2 className="text-3xl text-center lg:text-start font-semibold leading-tight sm:text-4xl ">
               Veja alguns trabalhos recentes.
             </h2>
           </div>
