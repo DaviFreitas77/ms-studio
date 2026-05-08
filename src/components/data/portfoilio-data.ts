@@ -12,11 +12,11 @@ export const portfolioSlides = [
     text: "Detalhes delicados para um resultado mais sofisticado.",
   },
   {
-    title: "Glossy detail work",
+    title: "Glossy detail workk",
     text: "Detalhes delicados para um resultado mais sofisticado.",
   },
   {
-    title: "Glossy detail work",
+    title: "Glossy detail work0",
     text: "Detalhes delicados para um resultado mais sofisticado.",
   },
 ];
