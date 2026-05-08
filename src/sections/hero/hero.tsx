@@ -47,7 +47,7 @@ export function Hero() {
             Agende seu horário
           </button>
 
-          <div className="mt-10 grid max-w-xl grid-cols-3 gap-3 rounded-lg bg-black/40 p-4 sm:gap-8 sm:p-6">
+          <div className="mt-10 grid max-w-xl grid-cols-3 gap-3 rounded-lg bg-black/40 p-4 sm:gap-8 sm:p-6 border border-gray-100/5">
             <div className="text-center">
               <p className="text-xl font-extrabold sm:text-2xl">100+</p>
               <p className="text-xs text-gray-400 sm:text-sm">
