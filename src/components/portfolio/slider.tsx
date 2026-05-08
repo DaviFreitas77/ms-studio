@@ -55,7 +55,7 @@ export function Slider() {
                     alt={slide.title}
                     fill
                     sizes="(max-width: 640px) 95vw, (max-width: 1200px) 55vw, 40vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105 rounded-lg"
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent" />
                   <div className="absolute left-5 right-5 bottom-5">
@@ -65,9 +65,7 @@ export function Slider() {
                     <h3 className="hidden sm:block mt-3 text-xl font-semibold sm:text-2xl">
                       {slide.title}
                     </h3>
-                    <p className="hidden sm:block mt-2 max-w-md text-xs text-gray-300 sm:text-sm">
-                      {slide.text}
-                    </p>
+                    
                   </div>
                 </div>
               </article>

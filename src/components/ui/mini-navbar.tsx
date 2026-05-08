@@ -81,7 +81,7 @@ export function Navbar() {
                      transition-all duration-300 ease-out
                      group-hover:opacity-60 group-hover:blur-xl group-hover:-m-3"
       ></div>
-      <button className="relative z-10 px-4 py-2 sm:px-3 text-xs sm:text-sm font-semibold text-black bg-gradient-to-br from-gray-100 to-gray-300 rounded-full hover:from-gray-200 hover:to-gray-400 transition-all duration-200 w-full sm:w-auto">
+      <button className="relative z-10 px-4 py-2 sm:px-3 text-xs sm:text-sm  text-black bg-gradient-to-br from-gray-100 to-gray-300 rounded-lg hover:from-gray-200 hover:to-gray-400 transition-all duration-200 w-full sm:w-auto font-light  tracking-[0.15em]">
         Agendar horário
       </button>
     </div>

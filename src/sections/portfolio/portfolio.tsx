@@ -3,21 +3,47 @@ import { Slider } from "@/src/components/portfolio/slider";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
-
-
+import { motion } from "framer-motion";
 
 export function Portfolio() {
-
   return (
-    <section className="relative z-10 overflow-hidden bg-linear-to-b from-[#0c0709] via-[#0a0607] to-black px-5 py-10 text-white sm:px-8 sm:py-14 lg:px-10 lg:py-20">
+    <section
+      className="relative z-10 overflow-hidden px-5 py-10 text-white sm:px-8 sm:py-14 lg:px-10 lg:py-20"
+      style={{
+        backgroundImage:
+          "linear-gradient(135deg, #000000 0%, #12040c 20%, #000000 100%)",
+      }}
+    >
       <div className="mx-auto max-w-7xl">
-        <div className="mb-4 flex items-center gap-3 sm:gap-4 w-full text-center justify-center lg:justify-start">
-          <span aria-hidden="true" className=" h-px w-12 bg-linear-to-r from-transparent via-white/35 to-transparent hidden lg:block" />
-          <p className="text-sm text-[#C9A227] text-center">Portfólio</p>
-        </div>
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{
+            duration: 0.7,
+            delay: 0.5,
+            ease: "easeIn",
+          }}
+          viewport={{ once: true, amount: 0.35 }}
+          className="mb-2 lg:mb-4  flex items-center gap-3 sm:gap-4 w-full text-center justify-center lg:justify-start"
+        >
+          <span
+            aria-hidden="true"
+            className=" h-px w-12 bg-linear-to-r from-transparent via-white/35 to-transparent hidden lg:block"
+          />
+          <p className="text-xs tracking-[0.20em] text-[#C9A227]  uppercase ">Portfólio</p>
+        </motion.div>
 
-        <div className="flex flex-col gap-6">
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{
+            duration: 0.7,
+            delay: 0.6,
+            ease: "easeIn",
+          }}
+          viewport={{ once: true, amount: 0.35 }}
+          className="flex flex-col gap-6"
+        >
           <div className="max-w-2xl w-full">
             <h2 className="text-3xl text-center lg:text-start font-semibold leading-tight sm:text-4xl ">
               Veja alguns trabalhos recentes.
@@ -27,8 +53,7 @@ export function Portfolio() {
           <div className="w-full">
             <Slider />
           </div>
-        </div>
-
+        </motion.div>
       </div>
 
       <style jsx global>{`
