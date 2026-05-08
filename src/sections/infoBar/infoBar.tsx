@@ -1,6 +1,6 @@
 export function InfoBar() {
   return (
-    <div className="relative z-10 bg-black py-3 px-4 flex flex-col items-center text-center text-[11px] text-white uppercase tracking-[0.12em] gap-2 sm:flex-row sm:justify-center sm:tracking-[0.25em] sm:gap-10">
+    <div className="relative z-10 bg-black py-3 px-4 flex flex-col items-center text-center text-[11px] text-white uppercase tracking-[0.12em] gap-2 sm:flex-row sm:justify-center sm:tracking-[0.25em] sm:gap-10 border border-gray-100/5">
       <div>
         <p>Atendimento a domicílio</p>
       </div>
