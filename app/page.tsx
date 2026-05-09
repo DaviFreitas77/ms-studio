@@ -1,6 +1,7 @@
 import { Hero } from "@/src/sections/hero/hero";
 import { InfoBar } from "@/src/sections/infoBar/infoBar";
 import { Portfolio } from "@/src/sections/portfolio/portfolio";
+import { Services } from "@/src/sections/services/services";
 
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <InfoBar/>
       <Portfolio/>
+      <Services/>
     </main>
   );
 }

@@ -41,7 +41,7 @@ export function Hero() {
             >
               <span
                 aria-hidden="true"
-                  className=" h-px w-12 bg-linear-to-r from-transparent via-black/20 to-transparent"
+                className=" h-px w-12 bg-linear-to-r from-transparent via-black/20 to-transparent"
               ></span>
               <ShinyText
                 text="MANICURE e PEDICURE"
@@ -142,11 +142,11 @@ export function Hero() {
               Alongamento
             </div>
 
-              <div className="rounded-full border border-gray-300 bg-white/70 px-3 py-1 text-xs font-medium tracking-[0.08em]  backdrop-blur-sm">
+            <div className="rounded-full border border-gray-300 bg-white/70 px-3 py-1 text-xs font-medium tracking-[0.08em]  backdrop-blur-sm">
               Esmaltação em gel
             </div>
 
-             <div className="rounded-full border border-gray-300 bg-white/70 px-3 py-1 text-xs font-medium tracking-[0.08em]  backdrop-blur-sm">
+            <div className="rounded-full border border-gray-300 bg-white/70 px-3 py-1 text-xs font-medium tracking-[0.08em]  backdrop-blur-sm">
               Blindagem
             </div>
 
