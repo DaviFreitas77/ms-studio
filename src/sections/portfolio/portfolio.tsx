@@ -10,10 +10,10 @@ export function Portfolio() {
   return (
     <section
       id="portfólio"
-      className="relative z-10 overflow-hidden px-5 py-10 text-white sm:px-8 sm:py-14 lg:px-10 lg:py-20"
+      className="relative z-10 overflow-hidden px-5 py-10 text-[#1a1a1a] sm:px-8 sm:py-14 lg:px-10 lg:py-20"
       style={{
         backgroundImage:
-          "linear-gradient(135deg, #000000 0%, #12040c 20%, #000000 100%)",
+          "linear-gradient(135deg, #faf7f1 0%, #f3e8d9 45%, #ffffff 100%)",
       }}
     >
       <div className="mx-auto max-w-7xl">
@@ -30,20 +30,20 @@ export function Portfolio() {
         >
           <span
             aria-hidden="true"
-            className=" h-px w-12 bg-linear-to-r from-transparent via-white/35 to-transparent hidden lg:block"
+            className=" h-px w-12 bg-linear-to-r from-transparent via-black/20 to-transparent hidden lg:block"
           />
           <ShinyText
             text="Portfólio"
             speed={2}
             delay={0}
-            color="#C9A227"
+            color="#8b6d1f"
             shineColor="#ffffff"
             spread={120}
             direction="left"
             yoyo={false}
             pauseOnHover={false}
             disabled={false}
-            className="text-xs tracking-[0.20em] text-[#C9A227]  uppercase"
+            className="text-xs tracking-[0.20em] text-[#8b6d1f] uppercase"
           />
         </motion.div>
 
@@ -79,7 +79,7 @@ export function Portfolio() {
           width: 10px;
           height: 10px;
           margin: 0 5px !important;
-          background: rgba(201, 162, 39, 0.35);
+          background: rgba(139, 109, 31, 0.28);
           opacity: 1;
           transition:
             transform 0.2s ease,
@@ -88,15 +88,15 @@ export function Portfolio() {
         }
 
         .portfolio-swiper .swiper-pagination-bullet:hover {
-          background: rgba(201, 162, 39, 0.75);
+          background: rgba(139, 109, 31, 0.7);
           transform: scale(1.15);
         }
 
         .portfolio-swiper .swiper-pagination-bullet-active {
           width: 24px;
           border-radius: 9999px;
-          background: linear-gradient(90deg, #c9a227, #e6c56a);
-          box-shadow: 0 0 0 4px rgba(201, 162, 39, 0.12);
+          background: linear-gradient(90deg, #8b6d1f, #c9a227);
+          box-shadow: 0 0 0 4px rgba(139, 109, 31, 0.1);
         }
       `}</style>
     </section>

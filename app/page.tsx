@@ -5,7 +5,7 @@ import { Portfolio } from "@/src/sections/portfolio/portfolio";
 
 export default function Home() {
   return (
-    <main className="relative overflow-hidden">
+    <main className="relative overflow-hidden bg-[#f7f3ec]">
       <Hero />
       <InfoBar/>
       <Portfolio/>

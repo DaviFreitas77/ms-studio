@@ -15,7 +15,7 @@ export function Slider() {
           type="button"
           aria-label="Slide anterior"
           onClick={() => swiperRef.current?.slidePrev()}
-          className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-colors hover:bg-white/10 sm:h-11 sm:w-11 cursor-pointer"
+          className="inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-black/10 bg-white/75 text-black transition-colors hover:bg-white sm:h-11 sm:w-11"
         >
           <ChevronLeft className="h-4 w-4 sm:h-5 sm:w-5" />
         </button>
@@ -23,19 +23,18 @@ export function Slider() {
           type="button"
           aria-label="Próximo slide"
           onClick={() => swiperRef.current?.slideNext()}
-          className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-colors hover:bg-white/10 sm:h-11 sm:w-11 cursor-pointer"
+          className="inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-black/10 bg-white/75 text-black transition-colors hover:bg-white sm:h-11 sm:w-11"
         >
           <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5" />
         </button>
       </div>
       <div className="mt-6">
         <Swiper
-          modules={[ Autoplay]}
+          modules={[Autoplay]}
           loop={true}
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
           }}
-
           autoplay={{ delay: 3500, disableOnInteraction: false }}
           spaceBetween={12}
           slidesPerView={1.7}
@@ -49,7 +48,7 @@ export function Slider() {
         >
           {portfolioSlides.map((slide, index) => (
             <SwiperSlide key={slide.title}>
-              <article className="group h-full w-full overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-[0_18px_80px_rgba(0,0,0,0.35)]">
+              <article className="group h-full w-full overflow-hidden rounded-2xl border border-black/10 bg-white/75 backdrop-blur-md shadow-[0_18px_80px_rgba(0,0,0,0.12)]">
                 <div className="relative aspect-4/5 w-full overflow-hidden">
                   <Image
                     src="/images/nails-work.jpg"
@@ -58,9 +57,9 @@ export function Slider() {
                     sizes="(max-width: 640px) 95vw, (max-width: 1200px) 55vw, 40vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105 rounded-lg"
                   />
-                  <div className="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent" />
+                  <div className="absolute inset-0 bg-linear-to-t from-white/85 via-white/10 to-transparent" />
                   <div className="absolute left-5 right-5 bottom-5">
-                    <div className="inline-flex rounded-full border border-gray-700 p-1 text-xs  text-[#E6C56A]">
+                    <div className="inline-flex rounded-full border border-black/10 bg-white/80 p-1 text-xs text-[#8b6d1f]">
                       0{index + 1}
                     </div>
                     {/* <h3 className="hidden sm:block mt-3 text-xl font-semibold sm:text-2xl">

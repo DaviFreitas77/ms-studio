@@ -6,14 +6,15 @@ import ShinyText from "@/src/components/ui/ShinyText";
 export function Hero() {
   return (
     <section
-    id="início"
-     className="relative">
-      <div className="pointer-events-none absolute inset-0 bg-linear-to-br from-black via-[#12040c] to-black" />
+      id="início"
+      className="relative overflow-hidden bg-linear-to-br from-[#fbf7f0] via-[#f4eadc] to-[#ffffff]"
+    >
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(201,162,39,0.10),transparent_35%),radial-gradient(circle_at_top_right,rgba(17,17,17,0.05),transparent_30%)]" />
       <div
-        className="pointer-events-none absolute inset-0 opacity-20"
+        className="pointer-events-none absolute inset-0 opacity-10"
         style={{
           backgroundImage:
-            "repeating-linear-gradient(135deg, rgba(201,162,39,0.08) 0px, rgba(201,162,39,0.08) 1px, transparent 1px, transparent 120px)",
+            "repeating-linear-gradient(135deg, rgba(139,109,31,0.08) 0px, rgba(139,109,31,0.08) 1px, transparent 1px, transparent 120px)",
         }}
       />
 
@@ -21,11 +22,11 @@ export function Hero() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(circle at center, transparent 35%, rgba(0,0,0,0.6) 100%)",
+            "radial-gradient(circle at center, transparent 35%, rgba(255,255,255,0.78) 100%)",
         }}
       />
 
-      <div className="relative z-10 mx-auto flex w-full max-w-350 flex-col items-center justify-center gap-10 px-5 pb-16 pt-28 text-white sm:px-8 md:pt-36 lg:flex-row lg:gap-26 lg:px-10 lg:pb-24 lg:pt-44">
+      <div className="relative z-10 mx-auto flex w-full max-w-350 flex-col items-center justify-center gap-10 px-5 pb-16 pt-28 text-[#1f1a16] sm:px-8 md:pt-36 lg:flex-row lg:gap-26 lg:px-10 lg:pb-24 lg:pt-44">
         <section className="w-full lg:w-1/2">
           <div>
             <motion.div
@@ -40,20 +41,20 @@ export function Hero() {
             >
               <span
                 aria-hidden="true"
-                className=" h-px w-12 bg-linear-to-r from-transparent via-white/35 to-transparent"
+                  className=" h-px w-12 bg-linear-to-r from-transparent via-black/20 to-transparent"
               ></span>
               <ShinyText
                 text="MANICURE e PEDICURE"
                 speed={2}
                 delay={0}
-                color="#C9A227"
+                color="#8b6d1f"
                 shineColor="#ffffff"
                 spread={120}
                 direction="left"
                 yoyo={false}
                 pauseOnHover={false}
                 disabled={false}
-                className="text-xs tracking-[0.20em] text-[#C9A227]  uppercase"
+                className="text-xs tracking-[0.20em] text-[#8b6d1f] uppercase"
               />
             </motion.div>
 
@@ -83,7 +84,7 @@ export function Hero() {
               }}
               className="flex items-center gap-4 mb-4"
             >
-              <div className="w-40 h-0.5 bg-[#C9A227] mt-2 rounded-full"></div>
+              <div className="w-40 h-0.5 bg-[#8b6d1f] mt-2 rounded-full"></div>
             </motion.div>
           </div>
 
@@ -96,7 +97,7 @@ export function Hero() {
               ease: "easeIn",
             }}
           >
-            <p className="mt-4 max-w-2xl text-base text-gray-300 sm:text-lg">
+            <p className="mt-4 max-w-2xl text-base text-neutral-700 sm:text-lg">
               Cada atendimento é feito com cuidado, atenção aos detalhes e muito
               carinho para valorizar ainda mais sua beleza.
             </p>
@@ -113,14 +114,14 @@ export function Hero() {
             className="w-full sm:w-fit"
           >
             <div className="group relative mt-5 inline-flex w-full sm:w-fit">
-              <button className="relative z-10 w-full whitespace-nowrap rounded-lg bg-linear-to-br from-gray-100 to-gray-300 px-8 py-3 text-base font-light tracking-[0.15em] text-black transition-all duration-200 hover:from-gray-200 hover:to-gray-400 sm:w-fit sm:px-12 cursor-pointer mt-3 border border-gray">
+              <button className="relative z-10 mt-3 w-full cursor-pointer whitespace-nowrap rounded-lg border border-amber-200 bg-linear-to-br from-[#fff7e6] to-[#efd08a] px-8 py-3 text-base font-light tracking-[0.15em] text-neutral-900 transition-all duration-200 hover:from-[#fffaf0] hover:to-[#f3dca2] sm:w-fit sm:px-12">
                 Agende seu horário
               </button>
             </div>
           </motion.div>
 
           <motion.div
-            className="mt-10 grid max-w-xl grid-cols-3 gap-3 rounded-lg bg-black/40 p-4 sm:gap-8 sm:p-6 border border-gray-100/5"
+            className="mt-10 flex max-w-xl flex-wrap gap-2"
             animate={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -50 }}
             transition={{
@@ -129,21 +130,28 @@ export function Hero() {
               ease: "easeIn",
             }}
           >
-            <div className="text-center">
-              <p className="text-xl font-extrabold sm:text-2xl">100+</p>
-              <p className="text-xs text-gray-400 sm:text-sm">
-                Clientes atendidos
-              </p>
+            <div className="rounded-full border border-gray-300 bg-white/70 px-3 py-1 text-xs font-medium tracking-[0.08em]  backdrop-blur-sm">
+              Manicure
             </div>
-            <div className="text-center">
-              <p className="text-xl font-extrabold sm:text-2xl">95%</p>
-              <p className="text-xs text-gray-400 sm:text-sm">
-                Taxa de retorno
-              </p>
+
+            <div className="rounded-full border border-gray-300 bg-white/70 px-3 py-1 text-xs font-medium tracking-[0.08em]  backdrop-blur-sm">
+              Pedicure
             </div>
-            <div className="text-center">
-              <p className="text-xl font-extrabold sm:text-2xl">150+</p>
-              <p className="text-xs text-gray-400 sm:text-sm">Avaliações</p>
+
+            <div className="rounded-full border border-gray-300 bg-white/70 px-3 py-1 text-xs font-medium tracking-[0.08em]  backdrop-blur-sm">
+              Alongamento
+            </div>
+
+              <div className="rounded-full border border-gray-300 bg-white/70 px-3 py-1 text-xs font-medium tracking-[0.08em]  backdrop-blur-sm">
+              Esmaltação em gel
+            </div>
+
+             <div className="rounded-full border border-gray-300 bg-white/70 px-3 py-1 text-xs font-medium tracking-[0.08em]  backdrop-blur-sm">
+              Blindagem
+            </div>
+
+            <div className="rounded-full border border-gray-300 bg-white/70 px-3 py-1 text-xs font-medium tracking-[0.08em]  backdrop-blur-sm">
+              Molde F1
             </div>
           </motion.div>
         </section>
@@ -181,7 +189,7 @@ export function Hero() {
 
               <div className="space-y-3 pt-4 sm:space-y-4 sm:pt-6">
                 <Image
-                  src="/images/nails-art.jpg"
+                  src="/images/me.png"
                   alt="Nail Art"
                   width={300}
                   height={380}
@@ -191,7 +199,7 @@ export function Hero() {
                 />
 
                 <Image
-                  src="/images/nails-art.jpg"
+                  src="/images/manicure.png"
                   alt="Nail Art"
                   width={260}
                   height={340}

@@ -9,8 +9,8 @@ const AnimatedNavLink = ({
   href: string;
   children: React.ReactNode;
 }) => {
-  const defaultTextColor = "text-gray-300";
-  const hoverTextColor = "text-white";
+  const defaultTextColor = "text-neutral-600";
+  const hoverTextColor = "text-neutral-900";
   const textSizeClass = "text-sm";
 
   return (
@@ -57,10 +57,10 @@ export function Navbar() {
 
   const logoElement = (
     <div className="relative w-5 h-5 flex items-center justify-center">
-      <span className="absolute w-1.5 h-1.5 rounded-full bg-gray-200 top-0 left-1/2 transform -translate-x-1/2 opacity-80"></span>
-      <span className="absolute w-1.5 h-1.5 rounded-full bg-gray-200 left-0 top-1/2 transform -translate-y-1/2 opacity-80"></span>
-      <span className="absolute w-1.5 h-1.5 rounded-full bg-gray-200 right-0 top-1/2 transform -translate-y-1/2 opacity-80"></span>
-      <span className="absolute w-1.5 h-1.5 rounded-full bg-gray-200 bottom-0 left-1/2 transform -translate-x-1/2 opacity-80"></span>
+      <span className="absolute w-1.5 h-1.5 rounded-full bg-neutral-700 top-0 left-1/2 transform -translate-x-1/2 opacity-80"></span>
+      <span className="absolute w-1.5 h-1.5 rounded-full bg-neutral-700 left-0 top-1/2 transform -translate-y-1/2 opacity-80"></span>
+      <span className="absolute w-1.5 h-1.5 rounded-full bg-neutral-700 right-0 top-1/2 transform -translate-y-1/2 opacity-80"></span>
+      <span className="absolute w-1.5 h-1.5 rounded-full bg-neutral-700 bottom-0 left-1/2 transform -translate-x-1/2 opacity-80"></span>
     </div>
   );
 
@@ -76,12 +76,12 @@ export function Navbar() {
       <div
         className="absolute inset-0 -m-2 rounded-full
                      hidden sm:block
-                     bg-gray-100
-                     opacity-40 filter blur-lg pointer-events-none
+                     bg-white
+                     opacity-80 filter blur-lg pointer-events-none
                      transition-all duration-300 ease-out
-                     group-hover:opacity-60 group-hover:blur-xl group-hover:-m-3"
+                     group-hover:opacity-95 group-hover:blur-xl group-hover:-m-3"
       ></div>
-      <button className="relative z-10 px-4 py-2 sm:px-3 text-xs sm:text-sm  text-black bg-gradient-to-br from-gray-100 to-gray-300 rounded-lg hover:from-gray-200 hover:to-gray-400 transition-all duration-200 w-full sm:w-auto font-light  tracking-[0.15em]">
+      <button className="relative z-10 px-4 py-2 sm:px-3 text-xs sm:text-sm text-neutral-900 bg-linear-to-brborder-amber-200 bg-linear-to-br from-[#fff7e6] to-[#efd08a] rounded-lg hover:from-white hover:to-amber-200 transition-all duration-200 w-full sm:w-auto font-light tracking-[0.15em] cursor-pointer">
         Agendar horário
       </button>
     </div>
@@ -93,7 +93,7 @@ export function Navbar() {
                        flex flex-col items-center
                        pl-6 pr-6 py-3 backdrop-blur-sm
                        ${headerShapeClass}
-                       border border-[#333] bg-[#1f1f1f57]
+                       border border-black/10 bg-white/80 shadow-[0_10px_30px_rgba(0,0,0,0.06)]
                        w-[calc(100%-2rem)] sm:w-auto
                        transition-[border-radius] duration-0 ease-in-out`}
     >
@@ -113,7 +113,7 @@ export function Navbar() {
         </div>
 
         <button
-          className="sm:hidden flex items-center justify-center w-8 h-8 text-gray-300 focus:outline-none"
+          className="sm:hidden flex items-center justify-center w-8 h-8 text-neutral-700 focus:outline-none"
           onClick={toggleMenu}
           aria-label={isOpen ? "Close Menu" : "Open Menu"}
         >
@@ -160,7 +160,7 @@ export function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-gray-300 hover:text-white transition-colors w-full text-center"
+              className="text-neutral-600 hover:text-neutral-900 transition-colors w-full text-center"
             >
               {link.label}
             </a>
