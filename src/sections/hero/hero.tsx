@@ -1,10 +1,13 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import ShinyText from "@/src/components/ui/ShinyText";
 
 export function Hero() {
   return (
-    <section className="relative">
+    <section
+    id="início"
+     className="relative">
       <div className="pointer-events-none absolute inset-0 bg-linear-to-br from-black via-[#12040c] to-black" />
       <div
         className="pointer-events-none absolute inset-0 opacity-20"
@@ -39,23 +42,34 @@ export function Hero() {
                 aria-hidden="true"
                 className=" h-px w-12 bg-linear-to-r from-transparent via-white/35 to-transparent"
               ></span>
-              <p className="text-xs tracking-[0.20em] text-[#C9A227]  uppercase ">
-                Manicure & Pedicure
-              </p>
+              <ShinyText
+                text="MANICURE e PEDICURE"
+                speed={2}
+                delay={0}
+                color="#C9A227"
+                shineColor="#ffffff"
+                spread={120}
+                direction="left"
+                yoyo={false}
+                pauseOnHover={false}
+                disabled={false}
+                className="text-xs tracking-[0.20em] text-[#C9A227]  uppercase"
+              />
             </motion.div>
 
             <motion.div
               animate={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -50 }}
               transition={{
-               duration: 0.8,
+                duration: 0.8,
                 delay: 0.5,
                 ease: "easeIn",
               }}
               className="flex items-center gap-4 mb-4"
             >
               <h1 className="inline-block max-w-xl text-4xl leading-tight sm:text-5xl lg:text-6xl lg:leading-19 font-light ">
-                Cuidando de   <span className="font-medium">cada detalhe das suas unhas</span>
+                Cuidando de{" "}
+                <span className="font-medium">cada detalhe das suas unhas</span>
               </h1>
             </motion.div>
 
@@ -63,7 +77,7 @@ export function Hero() {
               animate={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -50 }}
               transition={{
-              duration: 0.8,
+                duration: 0.8,
                 delay: 0.5,
                 ease: "easeIn",
               }}
@@ -78,7 +92,7 @@ export function Hero() {
             initial={{ opacity: 0, x: -50 }}
             transition={{
               duration: 0.8,
-                delay: 0.5,
+              delay: 0.5,
               ease: "easeIn",
             }}
           >
@@ -93,16 +107,13 @@ export function Hero() {
             initial={{ opacity: 0, x: -50 }}
             transition={{
               duration: 0.8,
-                delay: 0.5,
+              delay: 0.5,
               ease: "easeIn",
             }}
             className="w-full sm:w-fit"
           >
             <div className="group relative mt-5 inline-flex w-full sm:w-fit">
-              <div
-                className="absolute inset-0 -m-2 hidden rounded-full bg-gray-100 opacity-40 filter blur-lg pointer-events-none transition-all duration-300 ease-out group-hover:opacity-60 group-hover:blur-xl group-hover:-m-3 sm:block"
-              />
-              <button className="relative z-10 w-full whitespace-nowrap rounded-lg bg-linear-to-br from-gray-100 to-gray-300 px-8 py-3 text-base font-light tracking-[0.15em] text-black transition-all duration-200 hover:from-gray-200 hover:to-gray-400 sm:w-fit sm:px-12 cursor-pointer mt-3">
+              <button className="relative z-10 w-full whitespace-nowrap rounded-lg bg-linear-to-br from-gray-100 to-gray-300 px-8 py-3 text-base font-light tracking-[0.15em] text-black transition-all duration-200 hover:from-gray-200 hover:to-gray-400 sm:w-fit sm:px-12 cursor-pointer mt-3 border border-gray">
                 Agende seu horário
               </button>
             </div>
@@ -113,8 +124,8 @@ export function Hero() {
             animate={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -50 }}
             transition={{
-               duration: 0.8,
-                delay: 0.5,
+              duration: 0.8,
+              delay: 0.5,
               ease: "easeIn",
             }}
           >
@@ -137,63 +148,61 @@ export function Hero() {
           </motion.div>
         </section>
         <section className="w-full lg:w-1/2">
-        <motion.div
-           
+          <motion.div
             animate={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: 50 }}
             transition={{
-                duration: 0.8,
-                delay: 0.5,
+              duration: 0.8,
+              delay: 0.5,
               ease: "easeIn",
             }}
           >
-          <div className="grid grid-cols-2 gap-3 sm:gap-4">
-            <div className="space-y-3 sm:space-y-4">
-              <Image
-                src="/images/nails-art.jpg"
-                alt="Nail Art"
-                width={260}
-                height={340}
-                quality={85}
-                sizes="(max-width: 640px) 46vw, (max-width: 1024px) 32vw, 260px"
-                className="h-auto w-full rounded-lg object-cover"
-              />
-              <Image
-                src="/images/nails-art.jpg"
-                alt="Nail Art"
-                width={260}
-                height={340}
-                quality={85}
-                sizes="(max-width: 640px) 46vw, (max-width: 1024px) 32vw, 260px"
-                className="h-auto w-full rounded-lg object-cover"
-              />
-            </div>
+            <div className="grid grid-cols-2 gap-3 sm:gap-4">
+              <div className="space-y-3 sm:space-y-4">
+                <Image
+                  src="/images/nails-art.jpg"
+                  alt="Nail Art"
+                  width={260}
+                  height={340}
+                  quality={85}
+                  sizes="(max-width: 640px) 46vw, (max-width: 1024px) 32vw, 260px"
+                  className="h-auto w-full rounded-lg object-cover"
+                />
+                <Image
+                  src="/images/nails-art.jpg"
+                  alt="Nail Art"
+                  width={260}
+                  height={340}
+                  quality={85}
+                  sizes="(max-width: 640px) 46vw, (max-width: 1024px) 32vw, 260px"
+                  className="h-auto w-full rounded-lg object-cover"
+                />
+              </div>
 
-            <div className="space-y-3 pt-4 sm:space-y-4 sm:pt-6">
-              <Image
-                src="/images/nails-art.jpg"
-                alt="Nail Art"
-                width={300}
-                height={380}
-                quality={85}
-                sizes="(max-width: 640px) 46vw, (max-width: 1024px) 34vw, 300px"
-                className="h-auto w-full rounded-lg object-cover"
-              />
+              <div className="space-y-3 pt-4 sm:space-y-4 sm:pt-6">
+                <Image
+                  src="/images/nails-art.jpg"
+                  alt="Nail Art"
+                  width={300}
+                  height={380}
+                  quality={85}
+                  sizes="(max-width: 640px) 46vw, (max-width: 1024px) 34vw, 300px"
+                  className="h-auto w-full rounded-lg object-cover"
+                />
 
-              <Image
-                src="/images/nails-art.jpg"
-                alt="Nail Art"
-                width={260}
-                height={340}
-                quality={85}
-                sizes="(max-width: 640px) 46vw, (max-width: 1024px) 32vw, 260px"
-                className="h-auto w-full rounded-lg object-cover"
-              />
+                <Image
+                  src="/images/nails-art.jpg"
+                  alt="Nail Art"
+                  width={260}
+                  height={340}
+                  quality={85}
+                  sizes="(max-width: 640px) 46vw, (max-width: 1024px) 32vw, 260px"
+                  className="h-auto w-full rounded-lg object-cover"
+                />
+              </div>
             </div>
-          </div>
           </motion.div>
         </section>
-        
       </div>
     </section>
   );

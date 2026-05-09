@@ -4,10 +4,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { motion } from "framer-motion";
+import ShinyText from "@/src/components/ui/ShinyText";
 
 export function Portfolio() {
   return (
     <section
+      id="portfólio"
       className="relative z-10 overflow-hidden px-5 py-10 text-white sm:px-8 sm:py-14 lg:px-10 lg:py-20"
       style={{
         backgroundImage:
@@ -30,14 +32,26 @@ export function Portfolio() {
             aria-hidden="true"
             className=" h-px w-12 bg-linear-to-r from-transparent via-white/35 to-transparent hidden lg:block"
           />
-          <p className="text-xs tracking-[0.20em] text-[#C9A227]  uppercase ">Portfólio</p>
+          <ShinyText
+            text="Portfólio"
+            speed={2}
+            delay={0}
+            color="#C9A227"
+            shineColor="#ffffff"
+            spread={120}
+            direction="left"
+            yoyo={false}
+            pauseOnHover={false}
+            disabled={false}
+            className="text-xs tracking-[0.20em] text-[#C9A227]  uppercase"
+          />
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{
-           duration: 0.7,
+            duration: 0.7,
             delay: 0.5,
             ease: "easeIn",
           }}

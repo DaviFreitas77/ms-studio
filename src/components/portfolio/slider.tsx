@@ -1,5 +1,5 @@
 import { portfolioSlides } from "../data/portfoilio-data";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useRef } from "react";
@@ -15,7 +15,7 @@ export function Slider() {
           type="button"
           aria-label="Slide anterior"
           onClick={() => swiperRef.current?.slidePrev()}
-          className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-colors hover:bg-white/10 sm:h-11 sm:w-11"
+          className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-colors hover:bg-white/10 sm:h-11 sm:w-11 cursor-pointer"
         >
           <ChevronLeft className="h-4 w-4 sm:h-5 sm:w-5" />
         </button>
@@ -23,18 +23,19 @@ export function Slider() {
           type="button"
           aria-label="Próximo slide"
           onClick={() => swiperRef.current?.slideNext()}
-          className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-colors hover:bg-white/10 sm:h-11 sm:w-11"
+          className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-colors hover:bg-white/10 sm:h-11 sm:w-11 cursor-pointer"
         >
           <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5" />
         </button>
       </div>
       <div className="mt-6">
         <Swiper
-          modules={[Pagination, Autoplay]}
+          modules={[ Autoplay]}
+          loop={true}
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
           }}
-          pagination={{ clickable: true }}
+
           autoplay={{ delay: 3500, disableOnInteraction: false }}
           spaceBetween={12}
           slidesPerView={1.7}
@@ -42,7 +43,7 @@ export function Slider() {
             640: { slidesPerView: 2.2, spaceBetween: 14 },
             900: { slidesPerView: 2.5, spaceBetween: 18 },
             1200: { slidesPerView: 3.4, spaceBetween: 20 },
-            1440: { slidesPerView:3.5, spaceBetween: 24 },
+            1440: { slidesPerView: 3.5, spaceBetween: 24 },
           }}
           className="portfolio-swiper pb-12"
         >
@@ -59,13 +60,12 @@ export function Slider() {
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent" />
                   <div className="absolute left-5 right-5 bottom-5">
-                    <div className="inline-flex rounded-full border border-[#C9A227]/30 bg-[#C9A227]/15 px-3 py-1 text-xs uppercase tracking-[0.25em] text-[#E6C56A]">
+                    <div className="inline-flex rounded-full border border-gray-700 p-1 text-xs  text-[#E6C56A]">
                       0{index + 1}
                     </div>
-                    <h3 className="hidden sm:block mt-3 text-xl font-semibold sm:text-2xl">
+                    {/* <h3 className="hidden sm:block mt-3 text-xl font-semibold sm:text-2xl">
                       {slide.title}
-                    </h3>
-                    
+                    </h3> */}
                   </div>
                 </div>
               </article>
