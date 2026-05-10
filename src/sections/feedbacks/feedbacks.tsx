@@ -44,7 +44,9 @@ export function Feedbacks() {
   const swiperRef = useRef<SwiperType | null>(null);
 
   return (
-    <section className="relative py-16 bg-transparent px-5 sm:px-8 lg:px-10">
+    <section 
+    id="avaliações"
+    className="relative py-16 bg-transparent px-5 sm:px-8 lg:px-10">
       <div className="mx-auto max-w-7xl">
         <div className="flex items-center justify-between mb-6">
           <motion.div

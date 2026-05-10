@@ -4,7 +4,9 @@ import ShinyText from "@/src/components/ui/ShinyText";
 
 export function Services() {
   return (
-    <section className="relative z-10 overflow-hidden px-5 py-10 text-[#1a1a1a] sm:px-8 sm:py-14 lg:px-10 lg:py-20">
+    <section
+    id="serviços"
+    className="relative z-10 overflow-hidden px-5 py-10 text-[#1a1a1a] sm:px-8 sm:py-14 lg:px-10 lg:py-20">
       <div
         aria-hidden="true"
         className="absolute inset-0 -z-10 pointer-events-none"
@@ -115,7 +117,7 @@ export function Services() {
           viewport={{ once: true, amount: 0.35 }}
           className="bg-[#F6E6D6] rounded-lg p-4 mt-10 max-w-md py-10"
         >
-          <h3 className="text-xl font-semibold mb-2">Esmaltação em gel</h3>
+          <h3 className="text-xl font-semibold mb-2">Banho em gel</h3>
           <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">R$ 90</div>
           <p className="text-gray-700">
             Ofereço serviços de esmaltação em gel para deixar suas unhas
@@ -134,7 +136,7 @@ export function Services() {
           viewport={{ once: true, amount: 0.35 }}
           className="bg-[#F6E6D6] rounded-lg p-4 mt-10 max-w-md py-10"
         >
-          <h3 className="text-xl font-semibold mb-2">Molde F1</h3>
+          <h3 className="text-xl font-semibold mb-2">ALongamento no molde F1</h3>
           <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">R$ 70</div>
           <p className="text-gray-700">
             Realizo o molde F1 para criar unhas de gel personalizadas e
@@ -152,7 +154,7 @@ export function Services() {
           viewport={{ once: true, amount: 0.35 }}
           className="bg-[#F6E6D6] rounded-lg p-4 mt-10 max-w-md py-10"
         >
-          <h3 className="text-xl font-semibold mb-2">Alongamentos</h3>
+          <h3 className="text-xl font-semibold mb-2">Sombrancelhas com henna </h3>
           <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">
             R$ 100
           </div>

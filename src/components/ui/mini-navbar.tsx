@@ -67,7 +67,9 @@ export function Navbar() {
   const navLinksData = [
     { label: "Início", href: "#início" },
     { label: "Portfólio", href: "#portfólio" },
-    { label: "Serviços", href: "#2" },
+    { label: "Serviços", href: "#serviços" },
+    { label: "Formatos de unhas", href: "#formatos-de-unhas" },
+    { label: "Avaliações", href: "#avaliações" },
     { label: "Contato", href: "#4" },
   ];
 
