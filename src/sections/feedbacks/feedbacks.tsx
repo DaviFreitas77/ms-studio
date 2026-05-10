@@ -46,61 +46,61 @@ export function Feedbacks() {
   return (
     <section className="relative py-16 bg-transparent px-5 sm:px-8 lg:px-10">
       <div className="mx-auto max-w-7xl">
-        <div className="flex items-center justify-between mb-12">
+        <div className="flex items-center justify-between mb-6">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="text-center flex-1"
           >
-            <h3 className="text-3xl font-semibold">O que as clientes dizem</h3>
+            <h3 className="text-3xl font-semibold text-center">
+              O que as clientes dizem
+            </h3>
             <p className="mt-3 text-gray-600">
               Depoimentos reais para você confiar no meu trabalho.
             </p>
           </motion.div>
-
-          <div className="flex gap-2 self-end ">
-            <button
-              onClick={() => swiperRef.current?.slidePrev()}
-              className="swiper-button-prev-feedback inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-black/10 bg-white/75 text-black transition-colors hover:bg-white sm:h-11 sm:w-11"
-              aria-label="Previous"
-            >
-              <svg
-                className="h-4 w-4 sm:h-5 sm:w-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15 19l-7-7 7-7"
-                />
-              </svg>
-            </button>
-            <button
-              onClick={() => swiperRef.current?.slideNext()}
-              className="swiper-button-next-feedback inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-black/10 bg-white/75 text-black transition-colors hover:bg-white sm:h-11 sm:w-11"
-              aria-label="Next"
-            >
-              <svg
-                className="h-4 w-4 sm:h-5 sm:w-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </button>
-          </div>
         </div>
-
+        <div className="flex gap-2 self-end my-6 justify-end">
+          <button
+            onClick={() => swiperRef.current?.slidePrev()}
+            className="swiper-button-prev-feedback inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-black/10 bg-white/75 text-black transition-colors hover:bg-white sm:h-11 sm:w-11"
+            aria-label="Previous"
+          >
+            <svg
+              className="h-4 w-4 sm:h-5 sm:w-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+          <button
+            onClick={() => swiperRef.current?.slideNext()}
+            className="swiper-button-next-feedback inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-black/10 bg-white/75 text-black transition-colors hover:bg-white sm:h-11 sm:w-11"
+            aria-label="Next"
+          >
+            <svg
+              className="h-4 w-4 sm:h-5 sm:w-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        </div>
         <Swiper
           modules={[Autoplay, Pagination, Navigation]}
           spaceBetween={24}
