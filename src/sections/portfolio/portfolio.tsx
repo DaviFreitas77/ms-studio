@@ -67,38 +67,56 @@ export function Portfolio() {
           <div className="w-full">
             <Slider />
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.6,
+              delay: 0.7,
+              ease: "easeIn",
+            }}
+            viewport={{ once: true, amount: 0.35 }}
+            className="mt-8 flex flex-col items-center justify-center gap-4 rounded-2xl border border-black/10 p-8 text-center sm:p-10 relative overflow-hidden"
+            style={{
+              backgroundImage: "url('/images/fundo-porfolio.jpg')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <div className="absolute inset-0 bg-black/70" />
+            <div className="relative z-10">
+              <p className="text-sm tracking-[0.15em] text-[#f5dfa8] uppercase">
+                Inspire-se
+              </p>
+              <h3 className="text-xl font-semibold text-white sm:text-2xl mt-2">
+                Acompanhe mais no meu Instagram
+              </h3>
+              <p className="max-w-md text-sm text-white/90 mt-3">
+                Veja os trabalhos mais recentes, dicas de beleza e muito mais conteúdo exclusivo.
+              </p>
+              <a
+                href="https://www.instagram.com/studio.by.ms/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border border-[#8b6d1f]/30 bg-linear-to-r from-[#f8ebcf] to-[#e8c47a] px-6 py-2.5 text-sm font-medium text-[#36280f] transition-transform hover:-translate-y-0.5 mt-4"
+              >
+                <svg
+                  className="h-4 w-4"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.322a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z" />
+                </svg>
+                @sudio.by.ms
+              </a>
+            </div>
+          </motion.div>
         </motion.div>
       </div>
 
-      <style jsx global>{`
-        .portfolio-swiper .swiper-pagination {
-          bottom: 0 !important;
-        }
-
-        .portfolio-swiper .swiper-pagination-bullet {
-          width: 10px;
-          height: 10px;
-          margin: 0 5px !important;
-          background: rgba(139, 109, 31, 0.28);
-          opacity: 1;
-          transition:
-            transform 0.2s ease,
-            background 0.2s ease,
-            width 0.2s ease;
-        }
-
-        .portfolio-swiper .swiper-pagination-bullet:hover {
-          background: rgba(139, 109, 31, 0.7);
-          transform: scale(1.15);
-        }
-
-        .portfolio-swiper .swiper-pagination-bullet-active {
-          width: 24px;
-          border-radius: 9999px;
-          background: linear-gradient(90deg, #8b6d1f, #c9a227);
-          box-shadow: 0 0 0 4px rgba(139, 109, 31, 0.1);
-        }
-      `}</style>
+    
     </section>
   );
 }

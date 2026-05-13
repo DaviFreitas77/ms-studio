@@ -51,13 +51,12 @@ export function Slider() {
               <article className="group h-full w-full overflow-hidden rounded-2xl border border-black/10 bg-white/75 backdrop-blur-md shadow-[0_18px_80px_rgba(0,0,0,0.12)]">
                 <div className="relative aspect-4/5 w-full overflow-hidden">
                   <Image
-                    src="/images/nails-work.jpg"
+                    src={slide.image}
                     alt={slide.title}
                     fill
                     sizes="(max-width: 640px) 95vw, (max-width: 1200px) 55vw, 40vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105 rounded-lg"
                   />
-                  <div className="absolute inset-0 bg-linear-to-t from-white/85 via-white/10 to-transparent" />
                   <div className="absolute left-5 right-5 bottom-5">
                     <div className="inline-flex rounded-full border border-black/10 bg-white/80 p-1 text-xs text-[#8b6d1f]">
                       0{index + 1}

@@ -79,7 +79,7 @@ export function Services() {
           className="bg-[#F6E6D6] rounded-lg p-4 mt-10 max-w-md py-10"
         >
           <h3 className="text-xl font-semibold mb-2">Manicure</h3>
-          <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">R$ 70</div>
+          <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">R$ 35,00</div>
           <p className="text-gray-700">
             Ofereço serviços de manicure para cuidar das suas unhas e deixá-las
             lindas.
@@ -99,7 +99,7 @@ export function Services() {
         >
           <h3 className="text-xl font-semibold mb-2">Pedicure</h3>
           <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">
-            R$ 120
+            R$ 35,00
           </div>
           <p className="text-gray-700">
             Cuido dos seus pés com serviços de pedicure, garantindo que eles
@@ -118,7 +118,7 @@ export function Services() {
           className="bg-[#F6E6D6] rounded-lg p-4 mt-10 max-w-md py-10"
         >
           <h3 className="text-xl font-semibold mb-2">Banho em gel</h3>
-          <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">R$ 90</div>
+          <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">R$ 70,00</div>
           <p className="text-gray-700">
             Ofereço serviços de esmaltação em gel para deixar suas unhas
             duradouras e bonitas.
@@ -137,7 +137,7 @@ export function Services() {
           className="bg-[#F6E6D6] rounded-lg p-4 mt-10 max-w-md py-10"
         >
           <h3 className="text-xl font-semibold mb-2">ALongamento no molde F1</h3>
-          <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">R$ 70</div>
+          <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">R$ 100,00</div>
           <p className="text-gray-700">
             Realizo o molde F1 para criar unhas de gel personalizadas e
             resistentes.
@@ -156,7 +156,7 @@ export function Services() {
         >
           <h3 className="text-xl font-semibold mb-2">Sombrancelhas com henna </h3>
           <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">
-            R$ 100
+            R$ 25,00
           </div>
           <p className="text-gray-700">
             Ofereço serviços de alongamento de unhas para quem deseja unhas mais
@@ -176,7 +176,7 @@ export function Services() {
           className="bg-[#F6E6D6] rounded-lg p-4 mt-10 max-w-md py-10"
         >
           <h3 className="text-xl font-semibold mb-2">Design de Sobrancelhas</h3>
-          <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">R$ 80</div>
+          <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">R$ 20,00</div>
           <p className="text-gray-700">
             Realizo o design de sobrancelhas para realçar a beleza do seu rosto
             e destacar seus olhos.

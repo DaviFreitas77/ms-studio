@@ -3,6 +3,8 @@ import { Geist_Mono, Sora } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/src/components/layout/header";
 import { SmoothScroll } from "@/src/components/layout/smooth-scroll";
+import { ScrollToTop } from "@/src/components/ui/scroll-to-top";
+import { Footer } from "@/src/components/layout/footer";
 
 const sora = Sora({
   variable: "--font-sora",
@@ -33,6 +35,8 @@ export default function RootLayout({
         <SmoothScroll />
         <Header />
         {children}
+        <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );

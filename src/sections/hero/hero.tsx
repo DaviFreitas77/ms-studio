@@ -168,7 +168,7 @@ export function Hero() {
             <div className="grid grid-cols-2 gap-3 sm:gap-4">
               <div className="space-y-3 sm:space-y-4">
                 <Image
-                  src="/images/nails-art.jpg"
+                  src="/images/manicure-4.png"
                   alt="Nail Art"
                   width={260}
                   height={340}
@@ -177,7 +177,7 @@ export function Hero() {
                   className="h-auto w-full rounded-lg object-cover"
                 />
                 <Image
-                  src="/images/nails-art.jpg"
+                  src="/images/manicure-6.png"
                   alt="Nail Art"
                   width={260}
                   height={340}
