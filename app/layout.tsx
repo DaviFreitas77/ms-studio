@@ -29,14 +29,6 @@ export const metadata: Metadata = {
       "Manicure e pedicure domiciliar em São Paulo — atendimento na sua casa com qualidade profissional. Agende seu horário.",
     url: "https://studio-by-ms.com",
     siteName: "MS Studio",
-    images: [
-      {
-        url: "https://studio-by-ms.com/images/fundo-porfolio.jpg",
-        width: 1200,
-        height: 630,
-        alt: "MS Studio",
-      },
-    ],
     locale: "pt_BR",
     type: "website",
   },
