@@ -143,6 +143,26 @@ export function Services() {
             resistentes.
           </p>
         </motion.div>
+        
+        
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{
+            duration: 0.7,
+            delay: 0.5,
+            ease: "easeIn",
+          }}
+          viewport={{ once: true, amount: 0.35 }}
+          className="bg-[#F6E6D6] rounded-lg p-4 mt-10 max-w-md py-10"
+        >
+          <h3 className="text-xl font-semibold mb-2">Design de Sobrancelhas</h3>
+          <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">R$ 20,00</div>
+          <p className="text-gray-700">
+            Realizo o design de sobrancelhas para realçar a beleza do seu rosto
+            e destacar seus olhos.
+          </p>
+        </motion.div>
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -161,25 +181,6 @@ export function Services() {
           <p className="text-gray-700">
             Ofereço serviços de alongamento de unhas para quem deseja unhas mais
             longas e elegantes.
-          </p>
-        </motion.div>
-        
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{
-            duration: 0.7,
-            delay: 0.5,
-            ease: "easeIn",
-          }}
-          viewport={{ once: true, amount: 0.35 }}
-          className="bg-[#F6E6D6] rounded-lg p-4 mt-10 max-w-md py-10"
-        >
-          <h3 className="text-xl font-semibold mb-2">Design de Sobrancelhas</h3>
-          <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">R$ 20,00</div>
-          <p className="text-gray-700">
-            Realizo o design de sobrancelhas para realçar a beleza do seu rosto
-            e destacar seus olhos.
           </p>
         </motion.div>
       </section>

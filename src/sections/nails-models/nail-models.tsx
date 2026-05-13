@@ -9,7 +9,7 @@ import { motion } from "motion/react";
 export function NailModels() {
   return (
     <section
-      id="nail-models"
+      id="modelos-de-unhas"
       className="relative z-10 overflow-hidden px-5 py-10 text-[#1a1a1a] sm:px-8 sm:py-14 lg:px-10 lg:py-20"
       style={{
         backgroundImage:

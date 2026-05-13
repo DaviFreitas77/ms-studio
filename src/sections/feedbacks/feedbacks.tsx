@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { useRef } from "react";
@@ -14,31 +13,79 @@ const feedbacks = [
     id: 1,
     name: "Debora Freitas",
     text: "Melhor atendimento! Minhas unhas nunca estiveram tão bem cuidadas.",
-    img: "/images/mao.png",
     stars: 5,
   },
   {
     id: 2,
-    name: "Sandra silva",
-    text: "Profissional super atenciosas. Adorei as unhas.",
-    img: "/images/mao.png",
+    name: "Sandra Silva",
+    text: "Atendimento muito caprichado e o resultado ficou exatamente como eu queria.",
     stars: 5,
   },
   {
     id: 3,
     name: "Beatriz Costa",
-    text: "Ambiente lindo e produtos de qualidade — o acabamento dura semanas.",
-    img: "/images/nails-work.jpg",
+    text: "Fiquei apaixonada pelo acabamento e pela delicadeza em cada detalhe.",
     stars: 5,
   },
   {
     id: 4,
-    name: "Beatriz Costa",
-    text: "Ambiente lindo e produtos de qualidade — o acabamento dura semanas.",
-    img: "/images/nails-work.jpg",
+    name: "Camila Rocha",
+    text: "Saí muito satisfeita, minhas unhas ficaram elegantes e duraram bastante.",
+    stars: 5,
+  },
+  {
+    id: 5,
+    name: "Juliana Martins",
+    text: "O atendimento foi excelente e o acabamento ficou impecável.",
+    stars: 5,
+  },
+  {
+    id: 6,
+    name: "Fernanda Alves",
+    text: "Profissional dedicada e resultado lindo, tudo com muito cuidado.",
+    stars: 5,
+  },
+  {
+    id: 7,
+    name: "Patricia Lima",
+    text: "Gostei muito do cuidado e da atenção com minhas unhas fracas.",
+    stars: 5,
+  },
+  {
+    id: 8,
+    name: "Mariana Souza",
+    text: "Trabalho delicado, acabamento perfeito e uma experiência muito agradável.",
+    stars: 5,
+  },
+  {
+    id: 9,
+    name: "Aline Ferreira",
+    text: "Ficou tudo lindo e bem natural, exatamente o estilo que eu buscava.",
+    stars: 5,
+  },
+  {
+    id: 10,
+    name: "Larissa Mendes",
+    text: "Super recomendo. Atendimento ótimo e unhas impecáveis.",
     stars: 5,
   },
 ];
+
+const avatarGradients = [
+  "from-[#8b6d1f] to-[#f4d89f]",
+  "from-[#7b5d18] to-[#e8c47a]",
+  "from-[#6f4f16] to-[#f1d8a4]",
+  "from-[#9a7a2a] to-[#fde2ab]",
+];
+
+function getInitials(name: string) {
+  return name
+    .split(" ")
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0]?.toUpperCase())
+    .join("");
+}
 
 export function Feedbacks() {
   const swiperRef = useRef<SwiperType | null>(null);
@@ -123,14 +170,11 @@ export function Feedbacks() {
             <SwiperSlide key={f.id}>
               <div className="bg-[#F6E6D6] rounded-tr-2xl rounded-bl-2xl p-8 h-full min-h-50 flex flex-col justify-between">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-14 h-14 rounded-full overflow-hidden bg-gray-100">
-                    <Image
-                      src={f.img}
-                      alt={f.name}
-                      width={56}
-                      height={56}
-                      className="object-cover"
-                    />
+                  <div
+                    className={`w-14 h-14 rounded-full bg-linear-to-br ${avatarGradients[i % avatarGradients.length]} flex items-center justify-center text-white font-semibold shadow-[0_10px_30px_rgba(0,0,0,0.12)] ring-2 ring-white/70`}
+                    aria-hidden="true"
+                  >
+                    {getInitials(f.name)}
                   </div>
                   <div>
                     <div className="font-semibold text-[#1a1a1a]">{f.name}</div>

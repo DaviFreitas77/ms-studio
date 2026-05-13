@@ -27,12 +27,12 @@ const AnimatedNavLink = ({
 };
 
 export function Navbar() {
+  const whatsappUrl =
+    "https://wa.me/11988729935?text=oii%20tudo%20bem%3F%20gostaria%20de%20marcar%20um%20horario";
+
   const logoElement = (
     <div className="relative w-5 h-5 flex items-center justify-center">
-      <span className="absolute w-1.5 h-1.5 rounded-full bg-neutral-700 top-0 left-1/2 transform -translate-x-1/2 opacity-80"></span>
-      <span className="absolute w-1.5 h-1.5 rounded-full bg-neutral-700 left-0 top-1/2 transform -translate-y-1/2 opacity-80"></span>
-      <span className="absolute w-1.5 h-1.5 rounded-full bg-neutral-700 right-0 top-1/2 transform -translate-y-1/2 opacity-80"></span>
-      <span className="absolute w-1.5 h-1.5 rounded-full bg-neutral-700 bottom-0 left-1/2 transform -translate-x-1/2 opacity-80"></span>
+     MS
     </div>
   );
 
@@ -55,7 +55,10 @@ export function Navbar() {
                      transition-all duration-300 ease-out
                      group-hover:opacity-95 group-hover:blur-xl group-hover:-m-3"
       ></div>
-      <button className="relative z-10 px-4 py-2 sm:px-3 text-xs sm:text-sm text-neutral-900 border border-amber-200 bg-linear-to-br from-[#fff7e6] to-[#efd08a] rounded-lg hover:from-white hover:to-amber-200 transition-all duration-200 w-auto whitespace-nowrap font-light tracking-[0.15em] cursor-pointer">
+      <button
+        onClick={() => window.open(whatsappUrl, "_blank")}
+        className="relative z-10 px-4 py-2 sm:px-3 text-xs sm:text-sm text-neutral-900 border border-amber-200 bg-linear-to-br from-[#fff7e6] to-[#efd08a] rounded-lg hover:from-white hover:to-amber-200 transition-all duration-200 w-auto whitespace-nowrap font-light tracking-[0.15em] cursor-pointer"
+      >
         Agendar horário
       </button>
     </div>
