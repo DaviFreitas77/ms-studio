@@ -11,11 +11,19 @@ export function Portfolio() {
     <section
       id="portfólio"
       className="relative z-10 overflow-hidden px-5 py-10 text-[#1a1a1a] sm:px-8 sm:py-14 lg:px-10 lg:py-20"
-      style={{
-        backgroundImage:
-          "linear-gradient(135deg, #faf7f1 0%, #f3e8d9 45%, #ffffff 100%)",
-      }}
+     
     >
+
+         <div
+        aria-hidden="true"
+        className="absolute inset-0 -z-10 pointer-events-none"
+        style={{
+          backgroundImage:
+            "repeating-linear-gradient(135deg, rgba(201,162,39,0.04) 0px, rgba(201,162,39,0.04) 2px, transparent 2px, transparent 40px)",
+          mixBlendMode: "overlay",
+          opacity: 0.9,
+        }}
+      />
       <div className="mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
