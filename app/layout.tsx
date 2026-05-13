@@ -21,9 +21,6 @@ export const metadata: Metadata = {
   title: "MS Studio — Manicure & Pedicure Domiciliar em São Paulo",
   description:
     "Manicure e pedicure domiciliar em São Paulo — atendimento na sua casa com qualidade profissional. Agende seu horário.",
-  // icons: {
-  //   icon: "/favicon.svg",
-  // },
   keywords: ["manicure domiciliar São Paulo", "pedicure domiciliar SP", "unhas", "atendimento em casa", "beleza", "MS Studio"],
   authors: [{ name: "MS Studio" }],
   openGraph: {
