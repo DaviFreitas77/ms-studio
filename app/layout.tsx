@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: "MS Studio — Manicure & Pedicure Domiciliar em São Paulo",
     description:
       "Manicure e pedicure domiciliar em São Paulo — atendimento na sua casa com qualidade profissional. Agende seu horário.",
-    url: "https://studio-by-ms.com",
+    url: "https://studiobyms.com.br",
     siteName: "MS Studio",
     locale: "pt_BR",
     type: "website",
