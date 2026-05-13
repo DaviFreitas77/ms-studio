@@ -4,6 +4,9 @@ import { motion } from "framer-motion";
 import ShinyText from "@/src/components/ui/ShinyText";
 
 export function Hero() {
+  const whatsappUrl =
+    "https://wa.me/11988729935?text=oii%20tudo%20bem%3F%20gostaria%20de%20marcar%20um%20horario";
+
   return (
     <section
       id="início"
@@ -114,9 +117,14 @@ export function Hero() {
             className="w-full sm:w-fit"
           >
             <div className="group relative mt-5 inline-flex w-full sm:w-fit">
-              <button className="relative z-10 mt-3 w-full cursor-pointer whitespace-nowrap rounded-lg border border-amber-200 bg-linear-to-br from-[#fff7e6] to-[#efd08a] px-8 py-3 text-base font-light tracking-[0.15em] text-neutral-900 transition-all duration-200 hover:from-[#fffaf0] hover:to-[#f3dca2] sm:w-fit sm:px-12">
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="relative z-10 mt-3 inline-flex w-full cursor-pointer whitespace-nowrap rounded-lg border border-amber-200 bg-linear-to-br from-[#fff7e6] to-[#efd08a] px-8 py-3 text-base font-light tracking-[0.15em] text-neutral-900 transition-all duration-200 hover:from-[#fffaf0] hover:to-[#f3dca2] sm:w-fit sm:px-12"
+              >
                 Agende seu horário
-              </button>
+              </a>
             </div>
           </motion.div>
 
