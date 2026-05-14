@@ -50,8 +50,8 @@ export default function RootLayout({
       className={`${sora.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        {/* <SmoothScroll />
-        <JsonLdOrganization /> */}
+        <SmoothScroll />
+        <JsonLdOrganization />
         <Header />
         {children}
         <Footer />

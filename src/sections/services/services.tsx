@@ -145,7 +145,7 @@ export function Services() {
         </motion.div>
         
         
-        {/* <motion.div
+        <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{
@@ -162,8 +162,7 @@ export function Services() {
             Realizo o design de sobrancelhas para realçar a beleza do seu rosto
             e destacar seus olhos.
           </p>
-        </motion.div> */}
-{/*         
+        </motion.div>
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -183,7 +182,7 @@ export function Services() {
             Ofereço serviços de alongamento de unhas para quem deseja unhas mais
             longas e elegantes.
           </p>
-        </motion.div> */}
+        </motion.div>
       </section>
     </section>
   );
