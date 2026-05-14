@@ -27,7 +27,6 @@ export const metadata: Metadata = {
     title: "MS Studio — Manicure & Pedicure Domiciliar em São Paulo",
     description:
       "Manicure e pedicure domiciliar em São Paulo — atendimento na sua casa com qualidade profissional. Agende seu horário.",
-    url: "https://studiobyms.com.br",
     siteName: "MS Studio",
     locale: "pt_BR",
     type: "website",
@@ -51,8 +50,8 @@ export default function RootLayout({
       className={`${sora.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <SmoothScroll />
-        <JsonLdOrganization />
+        {/* <SmoothScroll />
+        <JsonLdOrganization /> */}
         <Header />
         {children}
         <Footer />
