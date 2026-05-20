@@ -28,7 +28,7 @@ const AnimatedNavLink = ({
 
 export function Navbar() {
   const handleScheduleClick = () => {
-    const phone = "11988729935";
+    const phone = "5511988729935";
     const message = "Oii Mirian, vim pelo site e gostaria de marcar um horário com você";
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${phone}?text=${encodedMessage}`, "_blank");
