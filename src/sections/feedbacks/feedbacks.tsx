@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { useRef } from "react";
@@ -14,28 +13,60 @@ const feedbacks = [
     id: 1,
     name: "Debora Freitas",
     text: "Melhor atendimento! Minhas unhas nunca estiveram tão bem cuidadas.",
-    img: "/images/mao.png",
     stars: 5,
   },
   {
     id: 2,
-    name: "Sandra silva",
-    text: "Profissional super atenciosas. Adorei as unhas.",
-    img: "/images/mao.png",
+    name: "Sandra Silva",
+    text: "Profissional super atenciosa. Adorei as unhas e voltarei sempre!",
     stars: 5,
   },
   {
     id: 3,
     name: "Beatriz Costa",
-    text: "Ambiente lindo e produtos de qualidade — o acabamento dura semanas.",
-    img: "/images/nails-work.jpg",
+    text: "Produtos de qualidade excelente — o acabamento dura semanas!",
     stars: 5,
   },
   {
     id: 4,
-    name: "Beatriz Costa",
-    text: "Ambiente lindo e produtos de qualidade — o acabamento dura semanas.",
-    img: "/images/nails-work.jpg",
+    name: "Marina Souza",
+    text: "Serviço impecável e atendimento muito atencioso. Super recomendo!",
+    stars: 5,
+  },
+  {
+    id: 5,
+    name: "Juliana Oliveira",
+    text: "Design perfeito e cores lindas! Ficou exatamente como imaginava.",
+    stars: 5,
+  },
+  {
+    id: 6,
+    name: "Carla Mendes",
+    text: "Unhas lindas e profissional de primeira qualidade. Muito satisfeita!",
+    stars: 5,
+  },
+  {
+    id: 7,
+    name: "Fernanda Barbosa",
+    text: "Amei o resultado! O acabamento é muito bom e durou muito tempo.",
+    stars: 5,
+  },
+  {
+    id: 8,
+    name: "Patricia Lima",
+    text: "Voltei várias vezes e continuo adorando. Profissional muito competente!",
+    stars: 5,
+  },
+  {
+    id: 9,
+    name: "Amanda Gomes",
+    text: "Recomendo para todas as amigas! Ficou maravilhoso e super confortável.",
+    stars: 5,
+  },
+  {
+    id: 10,
+    name: "Isabela Martins",
+    text: "Experiência sensacional! Equipe simpática e trabalho de excelência.",
     stars: 5,
   },
 ];
@@ -123,15 +154,6 @@ export function Feedbacks() {
             <SwiperSlide key={f.id}>
               <div className="bg-[#F6E6D6] rounded-tr-2xl rounded-bl-2xl p-8 h-full min-h-50 flex flex-col justify-between">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-14 h-14 rounded-full overflow-hidden bg-gray-100">
-                    <Image
-                      src={f.img}
-                      alt={f.name}
-                      width={56}
-                      height={56}
-                      className="object-cover"
-                    />
-                  </div>
                   <div>
                     <div className="font-semibold text-[#1a1a1a]">{f.name}</div>
                     <div className="text-[#8b6d1f] text-sm tracking-[0.18em]">

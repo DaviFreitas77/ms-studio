@@ -27,6 +27,13 @@ const AnimatedNavLink = ({
 };
 
 export function Navbar() {
+  const handleScheduleClick = () => {
+    const phone = "11988729935";
+    const message = "Oii Mirian, vim pelo site e gostaria de marcar um horário com você";
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/${phone}?text=${encodedMessage}`, "_blank");
+  };
+
   const logoElement = (
     <div className="relative w-5 h-5 flex items-center justify-center">
       <span className="absolute w-1.5 h-1.5 rounded-full bg-neutral-700 top-0 left-1/2 transform -translate-x-1/2 opacity-80"></span>
@@ -54,7 +61,9 @@ export function Navbar() {
                      transition-all duration-300 ease-out
                      group-hover:opacity-95 group-hover:blur-xl group-hover:-m-3"
       ></div>
-      <button className="relative z-10 px-4 py-2 sm:px-3 text-xs sm:text-sm text-neutral-900 border border-amber-200 bg-linear-to-br from-[#fff7e6] to-[#efd08a] rounded-lg hover:from-white hover:to-amber-200 transition-all duration-200 w-auto whitespace-nowrap font-light tracking-[0.15em] cursor-pointer">
+      <button 
+        onClick={handleScheduleClick}
+        className="relative z-10 px-4 py-2 sm:px-3 text-xs sm:text-sm text-neutral-900 border border-amber-200 bg-linear-to-br from-[#fff7e6] to-[#efd08a] rounded-lg hover:from-white hover:to-amber-200 transition-all duration-200 w-auto whitespace-nowrap font-light tracking-[0.15em] cursor-pointer">
         Agendar horário
       </button>
     </div>

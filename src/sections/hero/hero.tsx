@@ -4,6 +4,13 @@ import { motion } from "framer-motion";
 import ShinyText from "@/src/components/ui/ShinyText";
 
 export function Hero() {
+  const handleScheduleClick = () => {
+    const phone = "11988729935";
+    const message = "Oii Mirian, vim pelo site e gostaria de marcar um horário com você";
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/${phone}?text=${encodedMessage}`, "_blank");
+  };
+
   return (
     <section
       id="início"
@@ -114,7 +121,9 @@ export function Hero() {
             className="w-full sm:w-fit"
           >
             <div className="group relative mt-5 inline-flex w-full sm:w-fit">
-              <button className="relative z-10 mt-3 w-full cursor-pointer whitespace-nowrap rounded-lg border border-amber-200 bg-linear-to-br from-[#fff7e6] to-[#efd08a] px-8 py-3 text-base font-light tracking-[0.15em] text-neutral-900 transition-all duration-200 hover:from-[#fffaf0] hover:to-[#f3dca2] sm:w-fit sm:px-12">
+              <button 
+                onClick={handleScheduleClick}
+                className="relative z-10 mt-3 w-full cursor-pointer whitespace-nowrap rounded-lg border border-amber-200 bg-linear-to-br from-[#fff7e6] to-[#efd08a] px-8 py-3 text-base font-light tracking-[0.15em] text-neutral-900 transition-all duration-200 hover:from-[#fffaf0] hover:to-[#f3dca2] sm:w-fit sm:px-12">
                 Agende seu horário
               </button>
             </div>
@@ -168,7 +177,7 @@ export function Hero() {
             <div className="grid grid-cols-2 gap-3 sm:gap-4">
               <div className="space-y-3 sm:space-y-4">
                 <Image
-                  src="/images/manicure-4.png"
+                  src="/images/work-6.png"
                   alt="Nail Art"
                   width={260}
                   height={340}

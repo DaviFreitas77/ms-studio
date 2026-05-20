@@ -7,7 +7,7 @@ export const portfolioSlides = [
   {
     title: "Soft nude set",
     text: "Tons neutros com foco em elegância e durabilidade.",
-    image: "/images/service-2.jpeg",
+    image: "/images/manicure.jpeg",
   },
   {
     title: "Glossy detail work",
