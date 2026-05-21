@@ -120,7 +120,7 @@ export function Services() {
           <h3 className="text-xl font-semibold mb-2">Banho em gel</h3>
           <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">R$ 70,00</div>
           <p className="text-gray-700">
-            Ofereço serviços de esmaltação em gel para deixar suas unhas
+            Ofereço serviços de banho em gel para deixar suas unhas
             duradouras e bonitas.
           </p>
         </motion.div>
@@ -136,14 +136,33 @@ export function Services() {
           viewport={{ once: true, amount: 0.35 }}
           className="bg-[#F6E6D6] rounded-lg p-4 mt-10 max-w-md py-10"
         >
-          <h3 className="text-xl font-semibold mb-2">ALongamento no molde F1</h3>
+          <h3 className="text-xl font-semibold mb-2">Alongamento no molde F1</h3>
           <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">R$ 100,00</div>
           <p className="text-gray-700">
-            Realizo o molde F1 para criar unhas de gel personalizadas e
+            Realizo alongamento no molde F1 para criar unhas personalizadas e
             resistentes.
           </p>
         </motion.div>
         
+          <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{
+            duration: 0.7,
+            delay: 0.5,
+            ease: "easeIn",
+          }}
+          viewport={{ once: true, amount: 0.35 }}
+          className="bg-[#F6E6D6] rounded-lg p-4 mt-10 max-w-md py-10"
+        >
+          <h3 className="text-xl font-semibold mb-2">Blindagem </h3>
+          <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">
+            R$ 25,00
+          </div>
+          <p className="text-gray-700">
+            Ofereço serviços de blindagem para fortalecer suas unhas e protegê-las contra quebras e danos.
+          </p>
+        </motion.div>
         
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -179,10 +198,10 @@ export function Services() {
             R$ 25,00
           </div>
           <p className="text-gray-700">
-            Ofereço serviços de alongamento de unhas para quem deseja unhas mais
-            longas e elegantes.
+            Ofereço serviços de design com henna para realçar a cor e a forma das suas sobrancelhas
           </p>
         </motion.div>
+      
       </section>
     </section>
   );

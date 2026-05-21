@@ -37,6 +37,11 @@ export const metadata: Metadata = {
     description:
       "Manicure e pedicure domiciliar em São Paulo — atendimento na sua casa com qualidade profissional. Agende seu horário.",
   },
+  icons: [
+    { rel: "icon", url: "/favicon.svg" },
+    { rel: "icon", url: "/images/favicon.png" },
+    { rel: "apple-touch-icon", url: "/images/favicon.png" },
+  ],
 };
 
 export default function RootLayout({

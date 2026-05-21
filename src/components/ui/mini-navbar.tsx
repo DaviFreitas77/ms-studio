@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import ShinyText from "./ShinyText";
 
 const AnimatedNavLink = ({
   href,
@@ -36,10 +37,20 @@ export function Navbar() {
 
   const logoElement = (
     <div className="relative w-5 h-5 flex items-center justify-center">
-      <span className="absolute w-1.5 h-1.5 rounded-full bg-neutral-700 top-0 left-1/2 transform -translate-x-1/2 opacity-80"></span>
-      <span className="absolute w-1.5 h-1.5 rounded-full bg-neutral-700 left-0 top-1/2 transform -translate-y-1/2 opacity-80"></span>
-      <span className="absolute w-1.5 h-1.5 rounded-full bg-neutral-700 right-0 top-1/2 transform -translate-y-1/2 opacity-80"></span>
-      <span className="absolute w-1.5 h-1.5 rounded-full bg-neutral-700 bottom-0 left-1/2 transform -translate-x-1/2 opacity-80"></span>
+      
+    <ShinyText
+            text="MS"
+            speed={2}
+            delay={0}
+            color="#8b6d1f"
+            shineColor="#ffffff"
+            spread={120}
+            direction="left"
+            yoyo={false}
+            pauseOnHover={false}
+            disabled={false}
+            className="text-xs tracking-[0.20em] text-[#8b6d1f] uppercase"
+          />
     </div>
   );
 
