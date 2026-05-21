@@ -157,7 +157,7 @@ export function Services() {
         >
           <h3 className="text-xl font-semibold mb-2">Blindagem </h3>
           <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">
-            R$ 25,00
+            R$ 60,00
           </div>
           <p className="text-gray-700">
             Ofereço serviços de blindagem para fortalecer suas unhas e protegê-las contra quebras e danos.
