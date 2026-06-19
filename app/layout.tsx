@@ -6,6 +6,7 @@ import { SmoothScroll } from "@/src/components/layout/smooth-scroll";
 import { ScrollToTop } from "@/src/components/ui/scroll-to-top";
 import { JsonLdOrganization } from "@/src/components/seo/json-ld";
 import { Footer } from "@/src/components/layout/footer";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const sora = Sora({
   variable: "--font-sora",
@@ -55,6 +56,7 @@ export default function RootLayout({
       className={`${sora.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+       <GoogleAnalytics gaId="G-JBF1CKK438" />
         <SmoothScroll />
         <JsonLdOrganization />
         <Header />
