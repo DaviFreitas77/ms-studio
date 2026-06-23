@@ -52,7 +52,7 @@ export function NailModels() {
           </h2>
         </div>
 
-        <div className="w-full">
+        <div className="w-full mt-12">
           <SliderModelsNails />
         </div>
       </div>

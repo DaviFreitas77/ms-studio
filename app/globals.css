@@ -170,3 +170,6 @@ html.lenis body {
   transition-timing-function: linear !important;
 }
 
+.portfolio-swiper .swiper-wrapper {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+}

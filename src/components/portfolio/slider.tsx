@@ -36,6 +36,7 @@ export function Slider() {
             swiperRef.current = swiper;
           }}
           autoplay={{ delay: 3500, disableOnInteraction: false }}
+          speed={600}
           spaceBetween={12}
           slidesPerView={1.7}
           breakpoints={{
@@ -48,7 +49,7 @@ export function Slider() {
         >
           {portfolioSlides.map((slide, index) => (
             <SwiperSlide key={slide.title}>
-              <article className="group h-full w-full overflow-hidden rounded-2xl border border-black/10 bg-white/75 backdrop-blur-md shadow-[0_18px_80px_rgba(0,0,0,0.12)]">
+              <article className="group h-full w-full overflow-hidden rounded-2xl border border-black/10  backdrop-blur-md ">
                 <div className="relative aspect-4/5 w-full overflow-hidden">
                   <Image
                     src={slide.image}

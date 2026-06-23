@@ -93,6 +93,7 @@ export function Portfolio() {
             }}
           >
             <div className="absolute inset-0 bg-black/70" />
+            
             <div className="relative z-10">
               <p className="text-sm tracking-[0.15em] text-[#f5dfa8] uppercase">
                 Inspire-se
