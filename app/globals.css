@@ -166,8 +166,18 @@ html.lenis body {
   pointer-events: none;
 }
 
-.nails-swiper .swiper-wrapper {
-  transition-timing-function: linear !important;
+.nails-marquee-track {
+  animation: nails-marquee 22s linear infinite;
+}
+
+@keyframes nails-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .portfolio-swiper .swiper-wrapper {

@@ -1,15 +1,12 @@
 import { Autoplay, FreeMode } from "swiper/modules";
+import type { Swiper as SwiperType } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useRef } from "react";
 import Image from "next/image";
 import { nailsModelsSlide } from "../data/nails-models.data";
 
 export function SliderModelsNails() {
-  const infiniteSlides = [
-    ...nailsModelsSlide,
-    ...nailsModelsSlide,
-    ...nailsModelsSlide,
-  ];
-
+  const swiperRef = useRef<SwiperType | null>(null);
   return (
     <div className="w-full">
       {/* <div className="flex items-center justify-end gap-2">
@@ -32,17 +29,12 @@ export function SliderModelsNails() {
       </div> */}
       <div className="mt-6">
         <Swiper
-          modules={[Autoplay, FreeMode]}
+          modules={[Autoplay]}
           autoplay={{
             delay: 0,
             disableOnInteraction: false,
           }}
-          freeMode={{
-            enabled: true,
-            momentum: false,
-          }}
           loop={true}
-          loopAdditionalSlides={nailsModelsSlide.length}
           allowTouchMove={false}
           speed={4000}
           spaceBetween={12}
@@ -55,8 +47,8 @@ export function SliderModelsNails() {
           }}
           className="nails-swiper"
         >
-          {infiniteSlides.map((slide, index) => (
-            <SwiperSlide key={`${slide.title}-${index}`}>
+          {nailsModelsSlide.map((slide, index) => (
+            <SwiperSlide key={slide.title}>
               <article className="group h-full w-full overflow-hidden rounded-2xl border border-black/10 bg-white/75 ">
                 <div className="relative aspect-4/5 w-full overflow-hidden">
                   <Image
@@ -66,7 +58,7 @@ export function SliderModelsNails() {
                     sizes="(max-width: 640px) 95vw, (max-width: 1200px) 55vw, 40vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105 rounded-lg"
                   />
-                  <div className="absolute inset-0 bg-black/20" />
+                  <div className="absolute inset-0 bg-black/25" />
                   <div className="absolute left-5 right-5 bottom-5">
                    
                     <h3 className="sm:block mt-3 text-xl font-semibold text-white drop-shadow-[0_3px_10px_rgba(0,0,0,0.9)] sm:text-2xl">
