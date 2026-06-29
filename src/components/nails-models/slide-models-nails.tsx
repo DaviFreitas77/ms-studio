@@ -53,7 +53,7 @@ export function SliderModelsNails() {
 
         >
           {duplicatedSlides.map((slide, index) => (
-            <SwiperSlide key={slide.title}>
+            <SwiperSlide key={index}>
               <article className="group h-full w-full overflow-hidden rounded-2xl border border-black/10 bg-white/75 ">
                 <div className="relative aspect-4/5 w-full overflow-hidden">
                   <Image
