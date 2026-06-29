@@ -19,6 +19,38 @@ export function SmoothScroll() {
       lerp: 0.08,
     });
 
+    const handleAnchorClick = (event: MouseEvent) => {
+      const link = (event.target as Element | null)?.closest<HTMLAnchorElement>(
+        'a[href^="#"]'
+      );
+
+      if (!link) {
+        return;
+      }
+
+      const hash = link.getAttribute("href");
+
+      if (!hash || hash === "#") {
+        return;
+      }
+
+      const target = document.querySelector<HTMLElement>(
+        decodeURIComponent(hash)
+      );
+
+      if (!target) {
+        return;
+      }
+
+      event.preventDefault();
+      lenis.scrollTo(target, {
+        offset: -96,
+      });
+      window.history.pushState(null, "", hash);
+    };
+
+    document.addEventListener("click", handleAnchorClick);
+
     let frameId = 0;
 
     const raf = (time: number) => {
@@ -29,6 +61,7 @@ export function SmoothScroll() {
     frameId = window.requestAnimationFrame(raf);
 
     return () => {
+      document.removeEventListener("click", handleAnchorClick);
       window.cancelAnimationFrame(frameId);
       lenis.destroy();
     };
