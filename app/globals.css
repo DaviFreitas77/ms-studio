@@ -2,16 +2,13 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-
-
+@custom-variant dark (&:is(.dark *));
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: sora, sans-serif;
 }
-
-
 
 html.lenis,
 html.lenis body {
@@ -37,4 +34,17 @@ html.lenis body {
   transition-timing-function: linear !important;
 }
 
-
+@theme inline {
+  --animate-shine: shine var(--duration) infinite linear;
+  @keyframes shine {
+  0% {
+    background-position: 0% 0%;
+    }
+  50% {
+    background-position: 100% 100%;
+    }
+  to {
+    background-position: 0% 0%;
+    }
+  }
+}

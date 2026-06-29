@@ -58,7 +58,7 @@ export function Navbar() {
     { label: "Início", href: "#início" },
     { label: "Portfólio", href: "#portfólio" },
     { label: "Serviços", href: "#serviços" },
-
+    { label: "Atendimento", href: "#atendimento" },
     { label: "Avaliações", href: "#avaliações" },
   ];
 

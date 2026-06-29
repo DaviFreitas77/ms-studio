@@ -5,6 +5,7 @@ import { Portfolio } from "@/src/sections/portfolio/portfolio";
 import { Services } from "@/src/sections/services/services";
 import { ScrollProgress } from "@/src/components/ui/scroll-progress";
 import { NailModels } from "@/src/sections/nails-models/nail-models";
+import { Location } from "@/src/sections/location/location";
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Portfolio />
       <NailModels/>
       <Services />
+      <Location />
       <Feedbacks />
     </main>
   );
