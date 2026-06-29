@@ -130,7 +130,7 @@ export function Hero() {
           </motion.div>
 
           <motion.div
-            className="mt-10 flex max-w-xl flex-wrap gap-2"
+            className="mt-10  max-w-xl flex-wrap gap-2 hidden lg:flex"
             animate={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -50 }}
             transition={{
