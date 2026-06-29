@@ -34,7 +34,7 @@ export function Services() {
             className=" h-px w-12 bg-linear-to-r from-transparent via-black/20 to-transparent hidden lg:block"
           />
           <ShinyText
-            text="Seviços"
+            text="Serviços"
             speed={2}
             delay={0}
             color="#8b6d1f"
@@ -193,7 +193,7 @@ export function Services() {
           viewport={{ once: true, amount: 0.35 }}
           className="bg-[#F6E6D6] rounded-lg p-4 mt-10 max-w-md py-10"
         >
-          <h3 className="text-xl font-semibold mb-2">Sombrancelhas com henna </h3>
+          <h3 className="text-xl font-semibold mb-2">Sobrancelhas com henna </h3>
           <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">
             R$ 25,00
           </div>
