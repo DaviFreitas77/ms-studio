@@ -1,12 +1,15 @@
 import { Autoplay, FreeMode } from "swiper/modules";
-import type { Swiper as SwiperType } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useRef } from "react";
 import Image from "next/image";
 import { nailsModelsSlide } from "../data/nails-models.data";
 
 export function SliderModelsNails() {
-  const swiperRef = useRef<SwiperType | null>(null);
+  const duplicatedSlides = [
+  ...nailsModelsSlide,
+  ...nailsModelsSlide,
+  ...nailsModelsSlide,
+];
+
   return (
     <div className="w-full">
       {/* <div className="flex items-center justify-end gap-2">
@@ -32,8 +35,10 @@ export function SliderModelsNails() {
           modules={[Autoplay]}
           autoplay={{
             delay: 0,
-            disableOnInteraction: false,
+            disableOnInteraction: true,
+
           }}
+
           loop={true}
           allowTouchMove={false}
           speed={4000}
@@ -45,9 +50,9 @@ export function SliderModelsNails() {
             1200: { slidesPerView: 3.4, spaceBetween: 20 },
             1440: { slidesPerView: 3.5, spaceBetween: 24 },
           }}
-          className="nails-swiper"
+
         >
-          {nailsModelsSlide.map((slide, index) => (
+          {duplicatedSlides.map((slide, index) => (
             <SwiperSlide key={slide.title}>
               <article className="group h-full w-full overflow-hidden rounded-2xl border border-black/10 bg-white/75 ">
                 <div className="relative aspect-4/5 w-full overflow-hidden">
@@ -60,7 +65,7 @@ export function SliderModelsNails() {
                   />
                   <div className="absolute inset-0 bg-black/25" />
                   <div className="absolute left-5 right-5 bottom-5">
-                   
+
                     <h3 className="sm:block mt-3 text-xl font-semibold text-white drop-shadow-[0_3px_10px_rgba(0,0,0,0.9)] sm:text-2xl">
                       {slide.title}
                     </h3>

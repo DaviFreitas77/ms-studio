@@ -1,5 +1,5 @@
 import { portfolioSlides } from "../data/portfoilio-data";
-import { Autoplay } from "swiper/modules";
+import { FreeMode } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useRef } from "react";
@@ -30,12 +30,10 @@ export function Slider() {
       </div>
       <div className="mt-6">
         <Swiper
-          modules={[Autoplay]}
+          modules={[FreeMode]}
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
           loop={true}
-          onSwiper={(swiper) => {
-            swiperRef.current = swiper;
-          }}
-          autoplay={{ delay: 3500, disableOnInteraction: false }}
+          freeMode={true}
           speed={600}
           spaceBetween={12}
           slidesPerView={1.7}
@@ -45,7 +43,7 @@ export function Slider() {
             1200: { slidesPerView: 3.4, spaceBetween: 20 },
             1440: { slidesPerView: 3.5, spaceBetween: 24 },
           }}
-          className="portfolio-swiper pb-12"
+        
         >
           {portfolioSlides.map((slide, index) => (
             <SwiperSlide key={slide.title}>

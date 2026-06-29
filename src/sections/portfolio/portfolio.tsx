@@ -95,9 +95,19 @@ export function Portfolio() {
             <div className="absolute inset-0 bg-black/70" />
             
             <div className="relative z-10">
-              <p className="text-sm tracking-[0.15em] text-[#f5dfa8] uppercase">
-                Inspire-se
-              </p>
+               <ShinyText
+            text="INSPIRE-SE"
+            speed={2}
+            delay={0}
+            color="#f5dfa8"
+            shineColor="#ffffff"
+            spread={120}
+            direction="left"
+            yoyo={false}
+            pauseOnHover={false}
+            disabled={false}
+            className="text-xs tracking-[0.20em] text-[#8b6d1f] uppercase"
+          />
               <h3 className="text-xl font-semibold text-white sm:text-2xl mt-2">
                 Acompanhe mais no meu Instagram
               </h3>

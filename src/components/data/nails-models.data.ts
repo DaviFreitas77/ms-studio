@@ -20,4 +20,6 @@ export const nailsModelsSlide = [
     image: "/images/model-almond.jpeg",
   },
   
+
+  
 ];
