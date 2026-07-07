@@ -33,7 +33,7 @@ export function Hero() {
         }}
       />
 
-      <div className="relative z-10 mx-auto flex w-full max-w-350 flex-col items-center justify-center gap-10 px-5 pb-16 pt-28 text-[#1f1a16] sm:px-8 md:pt-36 lg:flex-row lg:gap-26 lg:px-10 lg:pb-24 lg:pt-44">
+      <div className="relative z-10 mx-auto flex w-full lg:max-w-400 flex-col items-center justify-center gap-10 px-3 pb-16 pt-28 text-[#1f1a16] sm:px-8 md:pt-36 lg:flex-row lg:gap-26 lg:px-10 lg:pb-24 lg:pt-44">
         <section className="w-full lg:w-1/2">
           <div>
             <motion.div
@@ -75,7 +75,7 @@ export function Hero() {
               }}
               className="flex items-center gap-4 mb-4"
             >
-              <h1 className="inline-block max-w-xl text-4xl leading-tight sm:text-5xl lg:text-6xl lg:leading-19 font-light ">
+              <h1 className="inline-block text-3xl leading-tight sm:text-5xl lg:text-6xl lg:leading-19 font-light ">
                 Cuidando de{" "}
                 <span className="font-medium">cada detalhe das suas unhas</span>
               </h1>
@@ -174,25 +174,25 @@ export function Hero() {
               ease: "easeIn",
             }}
           >
-            <div className="grid grid-cols-2 gap-3 sm:gap-4">
+            <div className="grid grid-cols-2 gap-3 sm:gap-4 2xl:max-w-2xl">
               <div className="space-y-3 sm:space-y-4">
                 <Image
                   src="/images/work-6.png"
                   alt="Nail Art"
                   width={260}
                   height={340}
-                  quality={85}
-                  sizes="(max-width: 640px) 46vw, (max-width: 1024px) 32vw, 260px"
-                  className="h-auto w-full rounded-lg object-cover"
+               
+                 
+                  className=" w-full rounded-lg object-cover"
                 />
                 <Image
                   src="/images/manicure-6.png"
                   alt="Nail Art"
                   width={260}
                   height={340}
-                  quality={85}
-                  sizes="(max-width: 640px) 46vw, (max-width: 1024px) 32vw, 260px"
-                  className="h-auto w-full rounded-lg object-cover"
+               
+                 
+                  className=" w-full rounded-lg object-cover"
                 />
               </div>
 
@@ -202,9 +202,9 @@ export function Hero() {
                   alt="Nail Art"
                   width={300}
                   height={380}
-                  quality={85}
+               
                   sizes="(max-width: 640px) 46vw, (max-width: 1024px) 34vw, 300px"
-                  className="h-auto w-full rounded-lg object-cover"
+                  className=" w-full rounded-lg object-cover"
                 />
 
                 <Image
@@ -212,9 +212,9 @@ export function Hero() {
                   alt="Nail Art"
                   width={260}
                   height={340}
-                  quality={85}
-                  sizes="(max-width: 640px) 46vw, (max-width: 1024px) 32vw, 260px"
-                  className="h-auto w-full rounded-lg object-cover"
+               
+                 
+                  className=" w-full rounded-lg object-cover"
                 />
               </div>
             </div>

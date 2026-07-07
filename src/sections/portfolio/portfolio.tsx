@@ -67,7 +67,7 @@ export function Portfolio() {
           className="flex flex-col gap-6"
         >
           <div className="max-w-2xl w-full">
-            <h2 className="text-3xl text-center lg:text-start font-semibold leading-tight sm:text-4xl ">
+            <h2 className="text-3xl text-center lg:text-start font-light leading-tight sm:text-4xl ">
               Veja alguns trabalhos recentes.
             </h2>
           </div>

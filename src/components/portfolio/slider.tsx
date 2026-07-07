@@ -36,6 +36,7 @@ export function Slider() {
           freeMode={true}
           speed={600}
           spaceBetween={12}
+          
           slidesPerView={1.7}
           breakpoints={{
             640: { slidesPerView: 2.2, spaceBetween: 14 },

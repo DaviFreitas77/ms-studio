@@ -88,7 +88,7 @@ export function Feedbacks() {
             transition={{ duration: 0.6 }}
             className="text-center flex-1"
           >
-            <h3 className="text-3xl font-semibold text-center">
+            <h3 className="text-3xl font-light text-center">
               O que as clientes dizem
             </h3>
             <p className="mt-3 text-gray-600">

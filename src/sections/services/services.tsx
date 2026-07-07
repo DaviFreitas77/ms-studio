@@ -59,7 +59,7 @@ export function Services() {
           className="flex flex-col gap-6"
         >
           <div className="max-w-2xl w-full">
-            <h2 className="text-3xl text-center lg:text-start font-semibold leading-tight sm:text-4xl ">
+            <h2 className="text-3xl  text-center lg:text-start font-light leading-tight sm:text-4xl ">
               Conheça meus serviços
             </h2>
           </div>
@@ -78,7 +78,7 @@ export function Services() {
           viewport={{ once: true, amount: 0.35 }}
           className="bg-[#F6E6D6] rounded-lg p-4 mt-10 max-w-md py-10"
         >
-          <h3 className="text-xl font-semibold mb-2">Manicure</h3>
+          <h3 className="text-xl mb-2">Manicure</h3>
           <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">R$ 35,00</div>
           <p className="text-gray-700">
             Ofereço serviços de manicure para cuidar das suas unhas e deixá-las
@@ -97,7 +97,7 @@ export function Services() {
           viewport={{ once: true, amount: 0.35 }}
           className="bg-[#F6E6D6] rounded-lg p-4 mt-10 max-w-md py-10"
         >
-          <h3 className="text-xl font-semibold mb-2">Pedicure</h3>
+          <h3 className="text-xl  mb-2">Pedicure</h3>
           <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">
             R$ 35,00
           </div>
@@ -117,7 +117,7 @@ export function Services() {
           viewport={{ once: true, amount: 0.35 }}
           className="bg-[#F6E6D6] rounded-lg p-4 mt-10 max-w-md py-10"
         >
-          <h3 className="text-xl font-semibold mb-2">Banho em gel</h3>
+          <h3 className="text-xl  mb-2">Banho em gel</h3>
           <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">R$ 70,00</div>
           <p className="text-gray-700">
             Ofereço serviços de banho em gel para deixar suas unhas
@@ -136,7 +136,7 @@ export function Services() {
           viewport={{ once: true, amount: 0.35 }}
           className="bg-[#F6E6D6] rounded-lg p-4 mt-10 max-w-md py-10"
         >
-          <h3 className="text-xl font-semibold mb-2">Alongamento no molde F1</h3>
+          <h3 className="text-xl mb-2">Alongamento no molde F1</h3>
           <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">R$ 100,00</div>
           <p className="text-gray-700">
             Realizo alongamento no molde F1 para criar unhas personalizadas e
@@ -155,7 +155,7 @@ export function Services() {
           viewport={{ once: true, amount: 0.35 }}
           className="bg-[#F6E6D6] rounded-lg p-4 mt-10 max-w-md py-10"
         >
-          <h3 className="text-xl font-semibold mb-2">Blindagem </h3>
+          <h3 className="text-xl mb-2">Blindagem </h3>
           <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">
             R$ 60,00
           </div>
@@ -175,7 +175,7 @@ export function Services() {
           viewport={{ once: true, amount: 0.35 }}
           className="bg-[#F6E6D6] rounded-lg p-4 mt-10 max-w-md py-10"
         >
-          <h3 className="text-xl font-semibold mb-2">Design de Sobrancelhas</h3>
+          <h3 className="text-xl mb-2">Design de Sobrancelhas</h3>
           <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">R$ 20,00</div>
           <p className="text-gray-700">
             Realizo o design de sobrancelhas para realçar a beleza do seu rosto
@@ -193,7 +193,7 @@ export function Services() {
           viewport={{ once: true, amount: 0.35 }}
           className="bg-[#F6E6D6] rounded-lg p-4 mt-10 max-w-md py-10"
         >
-          <h3 className="text-xl font-semibold mb-2">Sobrancelhas com henna </h3>
+          <h3 className="text-xl mb-2">Sobrancelhas com henna </h3>
           <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">
             R$ 25,00
           </div>
