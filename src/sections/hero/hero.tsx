@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import ShinyText from "@/src/components/ui/ShinyText";
-
+import { TbSparkle } from "react-icons/tb";
 export function Hero() {
   const handleScheduleClick = () => {
     const phone = "5511988729935";
@@ -89,9 +89,10 @@ export function Hero() {
                 delay: 0.5,
                 ease: "easeIn",
               }}
-              className="flex items-center gap-4 mb-4"
+              className="mb-4 flex items-center gap-3"
             >
-              <div className="w-40 h-0.5 bg-[#8b6d1f] mt-2 rounded-full"></div>
+              <div className="h-0.5 w-40 rounded-full bg-[#8b6d1f]" />
+            <TbSparkle size={20}  color="#8b6d1f"/>
             </motion.div>
           </div>
 
@@ -139,27 +140,27 @@ export function Hero() {
               ease: "easeIn",
             }}
           >
-            <div className="rounded-full border border-gray-300 bg-white/70 px-3 py-1 text-xs font-medium tracking-[0.08em]  backdrop-blur-sm">
+            <div className="rounded-full border border-gray-300  px-3 py-1 text-xs font-medium tracking-[0.08em]  backdrop-blur-sm">
               Manicure
             </div>
 
-            <div className="rounded-full border border-gray-300 bg-white/70 px-3 py-1 text-xs font-medium tracking-[0.08em]  backdrop-blur-sm">
+            <div className="rounded-full border border-gray-300  px-3 py-1 text-xs font-medium tracking-[0.08em]  backdrop-blur-sm">
               Pedicure
             </div>
 
-            <div className="rounded-full border border-gray-300 bg-white/70 px-3 py-1 text-xs font-medium tracking-[0.08em]  backdrop-blur-sm">
+            <div className="rounded-full border border-gray-300  px-3 py-1 text-xs font-medium tracking-[0.08em]  backdrop-blur-sm">
               Alongamento
             </div>
 
-            <div className="rounded-full border border-gray-300 bg-white/70 px-3 py-1 text-xs font-medium tracking-[0.08em]  backdrop-blur-sm">
+            <div className="rounded-full border border-gray-300  px-3 py-1 text-xs font-medium tracking-[0.08em]  backdrop-blur-sm">
               Esmaltação em gel
             </div>
 
-            <div className="rounded-full border border-gray-300 bg-white/70 px-3 py-1 text-xs font-medium tracking-[0.08em]  backdrop-blur-sm">
+            <div className="rounded-full border border-gray-300  px-3 py-1 text-xs font-medium tracking-[0.08em]  backdrop-blur-sm">
               Blindagem
             </div>
 
-            <div className="rounded-full border border-gray-300 bg-white/70 px-3 py-1 text-xs font-medium tracking-[0.08em]  backdrop-blur-sm">
+            <div className="rounded-full border border-gray-300  px-3 py-1 text-xs font-medium tracking-[0.08em]  backdrop-blur-sm">
               Molde F1
             </div>
           </motion.div>
