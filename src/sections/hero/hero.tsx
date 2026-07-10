@@ -51,7 +51,7 @@ export function Hero() {
                 className=" h-px w-12 bg-linear-to-r from-transparent via-black/20 to-transparent"
               ></span>
               <ShinyText
-                text="MANICURE e PEDICURE"
+                text="UNHAS & SOBRANCELHAS "
                 speed={2}
                 delay={0}
                 color="#8b6d1f"
@@ -75,9 +75,9 @@ export function Hero() {
               }}
               className="flex items-center gap-4 mb-4"
             >
-              <h1 className="inline-block text-3xl leading-tight sm:text-5xl lg:text-6xl lg:leading-19 font-light ">
-                Cuidando de{" "}
-                <span className="font-medium">cada detalhe das suas unhas</span>
+              <h1 className="inline-block text-3xl leading-tight sm:text-5xl lg:text-6xl lg:leading-19  ">
+                Realçando sua{" "}
+                <span className="">beleza em cada detalhe</span>
               </h1>
             </motion.div>
 
@@ -106,8 +106,9 @@ export function Hero() {
             }}
           >
             <p className="mt-4 max-w-2xl text-base text-neutral-700 sm:text-lg">
-              Cada atendimento é feito com cuidado, atenção aos detalhes e muito
-              carinho para valorizar ainda mais sua beleza.
+           Tudo o que você precisa para unhas perfeitas e sobrancelhas impecáveis, em um só lugar.
+
+
             </p>
           </motion.div>
 

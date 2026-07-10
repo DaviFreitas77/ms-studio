@@ -5,16 +5,17 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { motion } from "framer-motion";
 import ShinyText from "@/src/components/ui/ShinyText";
+import { CompareDemo } from "@/src/components/compare/compareWork";
 
 export function Portfolio() {
   return (
     <section
       id="portfólio"
       className="relative z-10 overflow-hidden px-5 py-10 text-[#1a1a1a] sm:px-8 sm:py-14 lg:px-10 lg:py-20"
-     
+
     >
 
-         <div
+      <div
         aria-hidden="true"
         className="absolute inset-0 -z-10 pointer-events-none"
         style={{
@@ -75,7 +76,7 @@ export function Portfolio() {
           <div className="w-full">
             <Slider />
           </div>
-
+          
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -93,21 +94,21 @@ export function Portfolio() {
             }}
           >
             <div className="absolute inset-0 bg-black/70" />
-            
+
             <div className="relative z-10">
-               <ShinyText
-            text="INSPIRE-SE"
-            speed={2}
-            delay={0}
-            color="#f5dfa8"
-            shineColor="#ffffff"
-            spread={120}
-            direction="left"
-            yoyo={false}
-            pauseOnHover={false}
-            disabled={false}
-            className="text-xs tracking-[0.20em] text-[#8b6d1f] uppercase"
-          />
+              <ShinyText
+                text="INSPIRE-SE"
+                speed={2}
+                delay={0}
+                color="#f5dfa8"
+                shineColor="#ffffff"
+                spread={120}
+                direction="left"
+                yoyo={false}
+                pauseOnHover={false}
+                disabled={false}
+                className="text-xs tracking-[0.20em] text-[#8b6d1f] uppercase"
+              />
               <h3 className="text-xl font-semibold text-white sm:text-2xl mt-2">
                 Acompanhe mais no meu Instagram
               </h3>
@@ -133,9 +134,14 @@ export function Portfolio() {
             </div>
           </motion.div>
         </motion.div>
+
+        <div className="flex flex-col justify-center items-center mt-20">
+           
+            <CompareDemo />
+          </div>
       </div>
 
-    
+
     </section>
   );
 }
