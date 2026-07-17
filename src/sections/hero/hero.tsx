@@ -3,6 +3,9 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import ShinyText from "@/src/components/ui/ShinyText";
 import { TbSparkle } from "react-icons/tb";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap";
+import { useRef, useEffect } from "react";
 export function Hero() {
   const handleScheduleClick = () => {
     const phone = "5511988729935";
@@ -11,10 +14,55 @@ export function Hero() {
     window.open(`https://wa.me/${phone}?text=${encodedMessage}`, "_blank");
   };
 
+
+
+ useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const images = gsap.utils.toArray<HTMLImageElement>(".image");
+
+   
+    const ctx = gsap.context(() => {
+      if (images.length === 0) return;
+
+      
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#início",
+          start: "top top",     
+          end: "+=1200",       
+          scrub: true,         
+          pin: true,           
+          pinSpacing: true,     
+        },
+      });
+
+    
+      if (images[0]) {
+        tl.fromTo(images[0], { x: 130, y: 140 }, { x: 0, y: 0 }, 0);
+      }
+
+      if (images[1]) {
+        tl.fromTo(images[1], { x: 130, y: -140 }, { x: 0, y: 0 }, 0);
+      }
+
+      if (images[2]) {
+        tl.fromTo(images[2], { x: -130, y: 140 }, { x: 0, y: 0 }, 0);
+      }
+
+      if (images[3]) {
+        tl.fromTo(images[3], { x: -130, y: -140 }, { x: 0, y: 0 }, 0);
+      }
+    });
+
+
+    return () => ctx.revert();
+  }, []);
+
   return (
     <section
       id="início"
-      className="relative overflow-hidden bg-linear-to-br from-[#fbf7f0] via-[#f4eadc] to-[#ffffff]"
+      className="relative overflow-visible bg-linear-to-br from-[#fbf7f0] via-[#f4eadc] to-[#ffffff]"
     >
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(201,162,39,0.10),transparent_35%),radial-gradient(circle_at_top_right,rgba(17,17,17,0.05),transparent_30%)]" />
       <div
@@ -92,7 +140,7 @@ export function Hero() {
               className="mb-4 flex items-center gap-3"
             >
               <div className="h-0.5 w-40 rounded-full bg-[#8b6d1f]" />
-            <TbSparkle size={20}  color="#8b6d1f"/>
+              <TbSparkle size={20} color="#8b6d1f" />
             </motion.div>
           </div>
 
@@ -106,7 +154,7 @@ export function Hero() {
             }}
           >
             <p className="mt-4 max-w-2xl text-base text-neutral-700 sm:text-lg">
-           Tudo o que você precisa para unhas perfeitas e sobrancelhas impecáveis, em um só lugar.
+              Tudo o que você precisa para unhas perfeitas e sobrancelhas impecáveis, em um só lugar.
 
 
             </p>
@@ -123,7 +171,7 @@ export function Hero() {
             className="w-full sm:w-fit"
           >
             <div className="group relative mt-5 inline-flex w-full sm:w-fit">
-              <button 
+              <button
                 onClick={handleScheduleClick}
                 className="relative z-10 mt-3 w-full cursor-pointer whitespace-nowrap rounded-lg border border-amber-200 bg-linear-to-br from-[#fff7e6] to-[#efd08a] px-8 py-3 text-base font-light tracking-[0.15em] text-neutral-900 transition-all duration-200 hover:from-[#fffaf0] hover:to-[#f3dca2] sm:w-fit sm:px-12">
                 Agende seu horário
@@ -183,18 +231,18 @@ export function Hero() {
                   alt="Nail Art"
                   width={260}
                   height={340}
-               
-                 
-                  className=" w-full rounded-lg object-cover"
+
+
+                  className=" w-full rounded-lg object-cover image"
                 />
                 <Image
                   src="/images/manicure-6.png"
                   alt="Nail Art"
                   width={260}
                   height={340}
-               
-                 
-                  className=" w-full rounded-lg object-cover"
+
+
+                  className=" w-full rounded-lg object-cover image"
                 />
               </div>
 
@@ -204,9 +252,9 @@ export function Hero() {
                   alt="Nail Art"
                   width={300}
                   height={380}
-               
+
                   sizes="(max-width: 640px) 46vw, (max-width: 1024px) 34vw, 300px"
-                  className=" w-full rounded-lg object-cover"
+                  className=" w-full rounded-lg object-cover image"
                 />
 
                 <Image
@@ -214,9 +262,9 @@ export function Hero() {
                   alt="Nail Art"
                   width={260}
                   height={340}
-               
-                 
-                  className=" w-full rounded-lg object-cover"
+
+
+                  className=" w-full rounded-lg object-cover image"
                 />
               </div>
             </div>
