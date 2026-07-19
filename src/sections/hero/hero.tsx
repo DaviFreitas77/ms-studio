@@ -3,9 +3,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import ShinyText from "@/src/components/ui/ShinyText";
 import { TbSparkle } from "react-icons/tb";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import gsap from "gsap";
-import { useRef, useEffect } from "react";
+
+
 export function Hero() {
   const handleScheduleClick = () => {
     const phone = "5511988729935";
@@ -16,48 +15,6 @@ export function Hero() {
 
 
 
- useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    const images = gsap.utils.toArray<HTMLImageElement>(".image");
-
-   
-    const ctx = gsap.context(() => {
-      if (images.length === 0) return;
-
-      
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: "#início",
-          start: "top top",     
-          end: "+=1200",       
-          scrub: true,         
-          pin: true,           
-          pinSpacing: true,     
-        },
-      });
-
-    
-      if (images[0]) {
-        tl.fromTo(images[0], { x: 130, y: 140 }, { x: 0, y: 0 }, 0);
-      }
-
-      if (images[1]) {
-        tl.fromTo(images[1], { x: 130, y: -140 }, { x: 0, y: 0 }, 0);
-      }
-
-      if (images[2]) {
-        tl.fromTo(images[2], { x: -130, y: 140 }, { x: 0, y: 0 }, 0);
-      }
-
-      if (images[3]) {
-        tl.fromTo(images[3], { x: -130, y: -140 }, { x: 0, y: 0 }, 0);
-      }
-    });
-
-
-    return () => ctx.revert();
-  }, []);
 
   return (
     <section
