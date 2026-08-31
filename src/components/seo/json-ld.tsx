@@ -1,7 +1,7 @@
 export function JsonLdOrganization() {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "NailSalon",
     name: "MS Studio",
     description: "Manicure e pedicure domiciliar — atendimento na casa da cliente",
     url: "https://studiobyms.com.br",
@@ -10,7 +10,7 @@ export function JsonLdOrganization() {
     serviceType: ["Manicure", "Pedicure", "Nail Art"],
     sameAs: [
       "https://instagram.com/studio.by.ms",
-      "https://wa.me/11988729935",
+      
     ],
     contactPoint: [
       {

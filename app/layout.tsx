@@ -23,21 +23,29 @@ export const metadata: Metadata = {
    verification: {
     google: "Ie66Vc37i8lfNb3SgcuXuNcXPwTi8IfPHIqwllz1VaE",
   },
+  metadataBase: new URL("https://studiobyms.com.br"),
   description:
     "Manicure e pedicure domiciliar em São Paulo — atendimento na sua casa com qualidade profissional. Agende seu horário.",
-  keywords: ["manicure domiciliar São Paulo", "pedicure domiciliar SP", "unhas", "atendimento em casa", "beleza", "MS Studio"],
+  keywords: [ "manicure domiciliar em São Paulo",
+  "pedicure domiciliar em São Paulo",
+  "manicure em casa São Paulo",
+  "pedicure em casa São Paulo",
+  "manicure e pedicure SP",
+  "serviço de manicure domiciliar",
+  "MS Studio",],
   authors: [{ name: "MS Studio" }],
   openGraph: {
-    title: "MS Studio — Manicure & Pedicure Domiciliar em São Paulo",
+    title: "MS Studio — Manicure e Pedicure Domiciliar em São Paulo",
     description:
       "Manicure e pedicure domiciliar em São Paulo — atendimento na sua casa com qualidade profissional. Agende seu horário.",
     siteName: "MS Studio",
+    url: "https://studiobyms.com.br",
     locale: "pt_BR",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "MS Studio — Manicure & Pedicure Domiciliar em São Paulo",
+    title: "MS Studio — Manicure e Pedicure Domiciliar em São Paulo",
     description:
       "Manicure e pedicure domiciliar em São Paulo — atendimento na sua casa com qualidade profissional. Agende seu horário.",
   },
@@ -55,7 +63,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="pt-BR"
       className={`${sora.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
