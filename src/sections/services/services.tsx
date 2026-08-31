@@ -137,7 +137,7 @@ export function Services() {
           className="bg-[#F6E6D6] rounded-lg p-4 mt-10 max-w-md py-10"
         >
           <h3 className="text-xl mb-2">Alongamento no molde F1</h3>
-          <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">R$ 100,00</div>
+          <div className="mb-3 text-lg font-semibold text-[#8b6d1f]">R$ 130,00</div>
           <p className="text-gray-700">
             Realizo alongamento no molde F1 para criar unhas personalizadas e
             resistentes.
