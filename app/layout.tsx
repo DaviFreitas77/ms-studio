@@ -19,7 +19,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MS Studio — Manicure & Pedicure Domiciliar em São Paulo",
+  title: "MS Studio — Manicure e Pedicure Domiciliar em São Paulo",
+   verification: {
+    google: "Ie66Vc37i8lfNb3SgcuXuNcXPwTi8IfPHIqwllz1VaE",
+  },
   description:
     "Manicure e pedicure domiciliar em São Paulo — atendimento na sua casa com qualidade profissional. Agende seu horário.",
   keywords: ["manicure domiciliar São Paulo", "pedicure domiciliar SP", "unhas", "atendimento em casa", "beleza", "MS Studio"],

@@ -4,8 +4,8 @@ export function JsonLdOrganization() {
     "@type": "LocalBusiness",
     name: "MS Studio",
     description: "Manicure e pedicure domiciliar — atendimento na casa da cliente",
-    url: "https://studio-by-ms.com",
-    logo: "https://studio-by-ms.com/images/me.png",
+    url: "https://studiobyms.com.br",
+    logo: "https://studiobyms.com.br/images/me.png",
     areaServed: "São Paulo, SP",
     serviceType: ["Manicure", "Pedicure", "Nail Art"],
     sameAs: [
